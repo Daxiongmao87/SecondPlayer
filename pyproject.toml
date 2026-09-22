@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "secondplayer"
+version = "0.1.0"
+description = "Local visual AI players for stock emulators"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+authors = [{name = "SecondPlayer contributors"}]
+dependencies = [
+  "numpy>=1.26",
+  "Pillow>=10.0",
+  "torch>=2.2",
+  "torchvision>=0.17",
+  "transformers>=5.3",
+  "safetensors>=0.4",
+  "huggingface_hub>=0.20",
+  "laya @ git+https://github.com/r33drichards/laya-vision.git@05ba04399f0e34ff31f7c8adf95d127c7fd009fc",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[project.scripts]
+secondplayer = "secondplayer.cli:main"
+secondplayerd = "secondplayer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["secondplayer*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+
+[tool.setuptools.package-data]
+"secondplayer.adapters.mesence" = ["bridge.lua"]

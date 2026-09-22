@@ -1,0 +1,31 @@
+[runtime]
+model = "thaitea/laya-vision"
+device = "cpu"
+reaction_ms = 200
+permutations = 1
+frames = 1
+sample = false
+offline = false
+objective = "Play the game effectively. If other players are present, treat them as teammates unless the game is clearly competitive."
+
+[adapter]
+name = "mesence"
+
+# Owned entirely by secondplayer.adapters.mesence.
+[adapter.options]
+binary = "Mesen"
+headless = false
+# When headless=true, launch MesenCE --testrunner through xvfb-run.
+xvfb = true
+startup_timeout_s = 20
+capture_timeout_s = 5
+testrunner_timeout_s = 3600
+keep_session = false
+# Optional: copy an existing MesenCE settings.json from here before applying
+# session-only Lua/network permissions and SNES port configuration.
+# source_config_home = "/home/me/.config/MesenCE"
+# deterministic = false
+
+[session.players]
+1 = "human"
+2 = "ai"
