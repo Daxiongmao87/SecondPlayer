@@ -124,6 +124,7 @@ def main(argv: list[str] | None = None) -> int:
                 snap_dir=out_dir / "snaps" if args.snap_every > 0 else None,
                 extra={
                     "model": cfg.runtime.model,
+                    "model_revision": cfg.runtime.model_revision,
                     "screen_grid": cfg.runtime.screen_grid,
                     "openjev_weights": cfg.runtime.openjev_weights,
                     "quant_backend": cfg.runtime.quant_backend,
@@ -137,6 +138,12 @@ def main(argv: list[str] | None = None) -> int:
                     "memory_turns": cfg.runtime.memory_turns,
                 },
             )
+            describe = getattr(policy, "model_info", None)
+            if callable(describe):
+                try:
+                    report["model_provenance"] = describe()
+                except Exception as exc:
+                    report["model_provenance"] = {"error": str(exc)}
             path = write_report(report, args.out_dir)
             final = report["final"]
             gameplay = "yes" if report["reached_gameplay"] else "no"

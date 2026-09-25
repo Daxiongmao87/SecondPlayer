@@ -2,7 +2,8 @@
 # Everything here is part of the benchmark definition: same file, same run.
 
 [runtime]
-model = "thaitea/laya-vision"
+model = "thaitea/laya-vision-201m"
+model_revision = "0b6228f7a0762566de1c4539e9aa4eb1c1aef5f4"
 device = "auto"
 reaction_ms = 100
 poll_ms = 100

@@ -56,6 +56,30 @@ def _parse_action_text(text: str) -> ControllerState:
     return ControllerState.from_buttons(part.strip() for part in text.split("+") if part.strip())
 
 
+def _laya_code_sha() -> str | None:
+    """Installed laya-vision code commit, from pip's direct-URL metadata."""
+    try:
+        from importlib import metadata
+
+        raw = metadata.direct_url_json("laya")
+    except Exception:
+        return None
+    if not raw:
+        return None
+    try:
+        commit = (raw.get("vcs_info") or {}).get("commit_id")
+    except Exception:
+        return None
+    return str(commit) if commit else None
+
+
+def _agent_params(agent: Any) -> int | None:
+    try:
+        return int(sum(p.numel() for p in agent.model.parameters()))
+    except Exception:
+        return None
+
+
 class LayaVisionPolicy:
     """Thin local policy wrapper around Laya Vision.
 
@@ -93,11 +117,27 @@ class LayaVisionPolicy:
         kwargs: dict[str, Any] = {"device": compute.device}
         if compute.dtype is not None:
             kwargs["dtype"] = compute.dtype
+        if self.config.model_revision:
+            kwargs["revision"] = self.config.model_revision
         try:
             self.agent = laya.load_vlm(self.config.model, **kwargs)
         except Exception as exc:  # pragma: no cover - requires model/runtime
             raise ModelError(f"failed to load Laya Vision model {self.config.model!r}: {exc}") from exc
         self._calibrate_window()
+
+    def model_info(self) -> dict[str, Any]:
+        """Provenance for benchmark reports: repo, revisions, code SHA, params."""
+        self.load()
+        assert self.agent is not None
+        source = getattr(self.agent, "source", None) or {}
+        info: dict[str, Any] = {
+            "repo": self.config.model,
+            "revision_requested": self.config.model_revision or None,
+            "revision_resolved": source.get("revision"),
+            "laya_code_sha": _laya_code_sha(),
+            "params": _agent_params(self.agent),
+        }
+        return info
 
     @staticmethod
     def _role_instruction(player: int) -> str:

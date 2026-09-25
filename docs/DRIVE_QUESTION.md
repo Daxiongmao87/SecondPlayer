@@ -283,13 +283,21 @@ held-out SNES pockets with factorized decisions inside its trained
 upstream instructions verbatim, 1-frame and 2-frame modes, training
 resolution (long_side=448), real hook descriptions.
 
-Result: **3/10 and 3/10** (chance ~4.2). All five lateral answers go
-left at 0.86-0.89 regardless of well side; all five drop answers go
-drop at 0.57-0.64. Mirror states emit identical distributions. The
-26-option uniformity the reviewer diagnosed was never the blocker:
-with 2-3 options the model still cannot distinguish mirrored SNES
-states. Zero-shot transfer fails at the vision level (browser Tetris
-rendering -> SNES rendering), so controller factorization cannot help.
+Result: **3/10 in 1-frame and 3/10 in 2-frame mode**. With five
+3-way and five 2-way questions, chance expectation is 4.17/10 and
+scoring <=3 happens ~34% of the time, so the bare 3/10 aggregate is
+weak evidence on its own and must not be read as "below chance".
+The decisive evidence is the state invariance: all five lateral
+answers go left at 0.86-0.89 regardless of well side, all five drop
+answers go drop at 0.57-0.64, and mirrored states emit
+near-identical distributions. The 26-option uniformity the reviewer
+diagnosed was never the blocker: with 2-3 options the model still
+cannot distinguish mirrored SNES states. Zero-shot end-to-end SNES
+transfer fails (browser Tetris rendering -> SNES rendering), so
+controller factorization cannot help. This experiment cannot
+separate "vision representation fails" from "vision representation
+changes but the trained decision layers ignore it on this OOD
+rendering"; the record claims only the end-to-end failure.
 `allowed_mass=0.000` throughout is genuine behavior (CPU float32
 reference bit-matches XPU); relative letter order still decides, and
 it decides by fixed prior. Scripts: `probes/2026-09-24-drive/pj*.py`.

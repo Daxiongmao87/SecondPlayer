@@ -14,6 +14,8 @@ PlayerMode = Literal["human", "ai", "disabled"]
 @dataclass(slots=True)
 class RuntimeConfig:
     model: str = "thaitea/laya-vision"
+    # Pinned Hub revision (commit SHA) for `model`; blank follows the default branch.
+    model_revision: str = ""
     openjev_weights: str = ""
     quant_backend: str = "quanto_qint4"
     # Display geometry for the text backend's cell grid: "ox,oy,cell_w,cell_h,cols,rows"
@@ -147,6 +149,8 @@ DEFAULT_TOML = """# SecondPlayer configuration
 [runtime]
 # Release builds are expected to bundle this checkpoint locally.
 model = "thaitea/laya-vision"
+# Pinned Hub revision (commit SHA) for the model above; blank follows default.
+model_revision = ""
 # OpenJev 4-bit decider: baked-in weights dir (empty = use `model` as-is).
 openjev_weights = ""
 # Backend for the decider: none | quanto_qint4 | torchao_int4 | awq.

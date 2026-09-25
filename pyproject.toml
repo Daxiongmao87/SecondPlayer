@@ -18,7 +18,7 @@ dependencies = [
   "transformers>=5.3",
   "safetensors>=0.4",
   "huggingface_hub>=0.20",
-  "laya @ git+https://github.com/r33drichards/laya-vision.git@05ba04399f0e34ff31f7c8adf95d127c7fd009fc",
+  "laya @ git+https://github.com/r33drichards/laya-vision.git@404fc4a63208d14b544d5c852f81e88972d267bb",
 ]
 
 [project.optional-dependencies]
