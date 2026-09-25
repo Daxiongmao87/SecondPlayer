@@ -1,0 +1,6 @@
+LOAD 5.5s :: {'repo': 'thaitea/laya-vision-201m', 'revision_requested': '0b6228f7a0762566de1c4539e9aa4eb1c1aef5f4', 'revision_resolved': '0b6228f7a0762566de1c4539e9aa4eb1c1aef5f4', 'laya_code_sha': '404fc4a63208d14b544d5c852f81e88972d267bb', 'params': 201161347}
+MIRROR H5 exp=right got=keep conf=0.030 2122ms :: neutral=0.112 up=0.083 down=0.061 left=0.078 right=0.054 up-left=0.142 up-right=0.063 down-left=0.152 down-right=0.094 keep=0.161
+MIRROR H6 exp=left got=neutral conf=0.034 151ms :: neutral=0.169 up=0.094 down=0.059 left=0.071 right=0.052 up-left=0.128 up-right=0.069 down-left=0.130 down-right=0.073 keep=0.156
+MIRROR H7 exp=right got=neutral conf=0.030 142ms :: neutral=0.167 up=0.097 down=0.076 left=0.069 right=0.055 up-left=0.091 up-right=0.064 down-left=0.132 down-right=0.087 keep=0.163
+MIRROR H8 exp=left got=keep conf=0.025 139ms :: neutral=0.134 up=0.109 down=0.069 left=0.069 right=0.054 up-left=0.122 up-right=0.075 down-left=0.134 down-right=0.077 keep=0.157
+MIRROR A1 exp=down got=down-left conf=0.042 143ms :: neutral=0.088 up=0.106 down=0.065 left=0.066 right=0.054 up-left=0.152 up-right=0.068 down-left=0.214 down-right=0.079 keep=0.108
