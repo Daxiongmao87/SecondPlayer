@@ -1,0 +1,2 @@
+CPU-thumb5 choice=drop conf=0.58 mass=0.000 top=I 1s :: left=0.21 right=0.00 rotate=0.06 drop=0.66 none=0.07
+CPU-h5-H3 choice=left conf=0.22 mass=0.000 top=I 1s :: left=0.48 right=0.33 none=0.19

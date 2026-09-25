@@ -1,0 +1,25 @@
+SYSTEM_PROMPT: 'Apply the question to the state. Choose exactly one of the listed options. Respond with only its uppercase letter, with no explanation or reasoning.'
+INSTRUCTIONS: 'Which move should the player make next?'
+device=xpu load_seconds=104
+PJ1 FAIL H5H exp=right got=left conf=0.24 mass=0.00 top=I 4202ms :: left=0.49 right=0.33 none=0.17
+PJ1 FAIL H5D exp=none got=drop conf=0.36 mass=0.00 top=I 1216ms :: drop=0.68 none=0.32
+PJ1 PASS H6H exp=left got=left conf=0.22 mass=0.00 top=I 536ms :: left=0.48 right=0.35 none=0.17
+PJ1 FAIL H6D exp=none got=drop conf=0.39 mass=0.00 top=I 450ms :: drop=0.70 none=0.30
+PJ1 FAIL H7H exp=right got=left conf=0.19 mass=0.00 top=I 432ms :: left=0.46 right=0.36 none=0.18
+PJ1 FAIL H7D exp=none got=drop conf=0.25 mass=0.00 top=I 547ms :: drop=0.62 none=0.38
+PJ1 PASS H8H exp=left got=left conf=0.19 mass=0.00 top=I 473ms :: left=0.46 right=0.37 none=0.18
+PJ1 FAIL H8D exp=none got=drop conf=0.38 mass=0.00 top=I 476ms :: drop=0.69 none=0.31
+PJ1 FAIL A1H exp=none got=left conf=0.24 mass=0.00 top=I 510ms :: left=0.50 right=0.35 none=0.16
+PJ1 PASS A1D exp=drop got=drop conf=0.39 mass=0.00 top=I 467ms :: drop=0.69 none=0.31
+== fps=1: 3/10 (chance ~4.2, gate 8) ==
+PJ2 FAIL H5H exp=right got=left conf=0.25 mass=0.00 top=I 479ms :: left=0.50 right=0.33 none=0.17
+PJ2 FAIL H5D exp=none got=drop conf=0.38 mass=0.00 top=I 647ms :: drop=0.69 none=0.31
+PJ2 PASS H6H exp=left got=left conf=0.24 mass=0.00 top=I 492ms :: left=0.49 right=0.34 none=0.17
+PJ2 FAIL H6D exp=none got=drop conf=0.41 mass=0.00 top=I 487ms :: drop=0.71 none=0.29
+PJ2 FAIL H7H exp=right got=left conf=0.18 mass=0.00 top=I 485ms :: left=0.46 right=0.37 none=0.18
+PJ2 FAIL H7D exp=none got=drop conf=0.24 mass=0.00 top=I 440ms :: drop=0.62 none=0.38
+PJ2 PASS H8H exp=left got=left conf=0.17 mass=0.00 top=I 500ms :: left=0.45 right=0.38 none=0.18
+PJ2 FAIL H8D exp=none got=drop conf=0.37 mass=0.00 top=I 505ms :: drop=0.68 none=0.32
+PJ2 FAIL A1H exp=none got=left conf=0.25 mass=0.00 top=I 465ms :: left=0.50 right=0.34 none=0.16
+PJ2 PASS A1D exp=drop got=drop conf=0.39 mass=0.00 top=I 450ms :: drop=0.70 none=0.30
+== fps=2: 3/10 (chance ~4.2, gate 8) ==

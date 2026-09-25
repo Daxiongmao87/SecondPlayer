@@ -272,3 +272,24 @@ near-identical, correct laterals at 0.02-0.05. Gate was 3/4. The verdict
 now holds across three load paths (runtime qint4, deployed qint4e via
 production scorer, live bench play) with numerically matching
 abstention/invariance signatures.
+
+## 11. PlayJev-0.8B factorized: transfer fails (2026-09-24)
+
+Per the reviewer's redirect, tested PlayJev-0.8B (Qwen3.5-0.8B finetune,
+10 browser games incl. Tetris, 2.2M frames, moves shuffled in training;
+weights + code from public upstream, no local-oracle contact) on the
+held-out SNES pockets with factorized decisions inside its trained
+2-7-action range: lateral {left, right, none} + drop {drop, none},
+upstream instructions verbatim, 1-frame and 2-frame modes, training
+resolution (long_side=448), real hook descriptions.
+
+Result: **3/10 and 3/10** (chance ~4.2). All five lateral answers go
+left at 0.86-0.89 regardless of well side; all five drop answers go
+drop at 0.57-0.64. Mirror states emit identical distributions. The
+26-option uniformity the reviewer diagnosed was never the blocker:
+with 2-3 options the model still cannot distinguish mirrored SNES
+states. Zero-shot transfer fails at the vision level (browser Tetris
+rendering -> SNES rendering), so controller factorization cannot help.
+`allowed_mass=0.000` throughout is genuine behavior (CPU float32
+reference bit-matches XPU); relative letter order still decides, and
+it decides by fixed prior. Scripts: `probes/2026-09-24-drive/pj*.py`.

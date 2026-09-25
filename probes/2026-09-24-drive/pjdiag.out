@@ -1,0 +1,7 @@
+thumb size: (240, 180) h5 size: (256, 224)
+prompt audit: 'Apply the question to the state. Choose exactly one of the listed options. Respond with only its uppercase letter, with no explanation or reasoning.\n\n<state>\n<|vision_start|><|image_pad|><|vision_end|'
+A-thumb-theirs5 choice=drop conf=0.57 mass=0.000 top=顾之忧 vtoks=70 3399ms :: left=0.21 right=0.00 rotate=0.06 drop=0.66 none=0.07
+B-h5-theirs5 choice=left conf=0.24 mass=0.000 top=I vtoks=72 1672ms :: left=0.39 right=0.24 rotate=0.06 drop=0.16 none=0.16
+C-h5-factor3 choice=left conf=0.21 mass=0.000 top=I vtoks=72 1399ms :: left=0.47 right=0.33 none=0.20
+D-h5-factor3-ls512 choice=left conf=0.60 mass=0.000 top=I vtoks=224 1900ms :: left=0.73 right=0.16 none=0.11
+E-thumb-factor3 choice=left conf=0.85 mass=0.000 top=I vtoks=70 1239ms :: left=0.90 right=0.01 none=0.09
