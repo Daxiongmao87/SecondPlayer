@@ -226,3 +226,28 @@ but not acted on.
 - Prior vision work (native 4B 1/6, Florence unloadable) predates this
   campaign; its scripts live only on the bench box, results are in
   `docs/OJCORE_PROBE.md` and section 4a above.
+
+## 9. Held-out outcome (2026-09-24, same day)
+
+The reviewer accepted the section-7 protocol with one requirement (two
+observations per state, no `render(None, ...)`) and proposed a prompt:
+controller-role system line, five temporal occupancy fields from mask
+set-ops (FILLED NOW / PREVIOUSLY / NEWLY FILLED / NEWLY EMPTIED /
+UNCHANGED), objective-driven question, directions defined in row/column
+geometry. Verbatim in `probes/2026-09-24-drive/heldout.py`. Four fresh
+pockets (new wells 6-7, 2-3, 5-6, 3-4; two must-go-right, two
+must-go-left; previous frame = square one row up, mover signature clean).
+
+Result: **0/4**. All four answered down-right (0.28-0.33); neutral fell
+to 0.19-0.25, up 0.17-0.22, correct laterals 0.02-0.07. Mirrored states
+again emit near-identical distributions (max delta 0.04). The
+`render(None)` flaw was real but not load-bearing: fixed, the verdict
+got stronger. Per the protocol's own terms this is materially stronger
+evidence against this 4B quant in single-forward letter readout.
+
+Standing concessions to the review (all verified against my scripts):
+the old action quizzes withheld temporal info they graded on; the live
+"moving object" sentence overclaims (symmetric difference + stale prev);
+think-act scored mid-thought; S3-down-0.02 rhetoric was spin over a
+pass; "~60 forwards" overstated independent evidence; "open space" was
+vague. None of them, fixed, changed the outcome.
