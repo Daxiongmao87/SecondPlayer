@@ -61,13 +61,13 @@ def _laya_code_sha() -> str | None:
     try:
         from importlib import metadata
 
-        raw = metadata.direct_url_json("laya")
+        raw_text = metadata.distribution("laya").read_text("direct_url.json")
     except Exception:
         return None
-    if not raw:
+    if not raw_text:
         return None
     try:
-        commit = (raw.get("vcs_info") or {}).get("commit_id")
+        commit = (json.loads(raw_text).get("vcs_info") or {}).get("commit_id")
     except Exception:
         return None
     return str(commit) if commit else None

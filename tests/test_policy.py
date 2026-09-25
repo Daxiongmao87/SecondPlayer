@@ -61,4 +61,6 @@ def test_model_info_reports_provenance(monkeypatch):
     assert info["repo"] == "org/repo"
     assert info["revision_requested"] == "requested-sha"
     assert info["revision_resolved"] == "resolved-sha"
-    assert "laya_code_sha" in info and "params" in info
+    sha = info["laya_code_sha"]
+    assert sha is None or (len(sha) == 40 and all(c in "0123456789abcdef" for c in sha))
+    assert "params" in info
