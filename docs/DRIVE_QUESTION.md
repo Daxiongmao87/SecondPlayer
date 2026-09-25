@@ -251,3 +251,24 @@ the old action quizzes withheld temporal info they graded on; the live
 think-act scored mid-thought; S3-down-0.02 rhetoric was spin over a
 pass; "~60 forwards" overstated independent evidence; "open space" was
 vague. None of them, fixed, changed the outcome.
+
+## 10. Clean round on the deployed quant (2026-09-24)
+
+The reviewer objected the held-out ran on runtime-quantized base weights
+(BF16 embeddings) rather than the shipped `qwen3.5-4b-qint4e` (int8
+embeddings + sidecar), that `dims_line`'s overclaim sentence was still
+prepended, and that down-right (DOWN+RIGHT) should count toward RIGHT
+cases. All three addressed: `probes/2026-09-24-drive/cleanround.py`
+loads qint4e through production `ojcore.load_model` + `ojcore.score`
+(XPU, dropped head, sidecar active — only the system line, which is the
+prompt under test, is swapped), uses a convention-only legend, computes
+temporal fields and the FrameDiff observation from the masks, and runs
+four NEW wells (7-8, 1-2, 8-9, 0-1) with fresh prev/current pairs.
+
+Result: **0/4 exact, 2/4 effective**. All four answered down-right
+(0.24-0.26); the two "effective" passes are the bias pattern (same
+answer where LEFT is needed), not discrimination — mirror states again
+near-identical, correct laterals at 0.02-0.05. Gate was 3/4. The verdict
+now holds across three load paths (runtime qint4, deployed qint4e via
+production scorer, live bench play) with numerically matching
+abstention/invariance signatures.
