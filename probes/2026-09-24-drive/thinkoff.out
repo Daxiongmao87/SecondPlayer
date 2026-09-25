@@ -1,0 +1,30 @@
+think-tag-in-template: True
+TEXT PASS orig 'Where is the falling' got='middle' [0.09, 0.83, 0.08] 2213ms
+TEXT FAIL orig 'Which columns hold s' got='columns 2-5' [0.04, 0.54, 0.42] 1979ms
+TEXT PASS synthA 'Where is the falling' got='middle' [0.09, 0.83, 0.08] 1171ms
+TEXT PASS synthA 'Which columns hold s' got='columns 2-5' [0.04, 0.54, 0.42] 1151ms
+TEXT PASS synthB 'Where is the falling' got='middle' [0.09, 0.83, 0.08] 1187ms
+TEXT FAIL synthB 'Which columns hold s' got='columns 2-5' [0.04, 0.54, 0.42] 1233ms
+== TEXT: 4/6 mean 1489ms ==
+COORD PASS orig 'Where is the falling' got='middle' [0.14, 0.56, 0.3] 2145ms
+COORD FAIL orig 'Which columns hold s' got='columns 2-5' [0.09, 0.87, 0.04] 2169ms
+COORD PASS synthA 'Where is the falling' got='middle' [0.17, 0.68, 0.15] 2224ms
+COORD PASS synthA 'Which columns hold s' got='columns 2-5' [0.01, 0.99, 0.0] 2171ms
+COORD PASS synthB 'Where is the falling' got='middle' [0.22, 0.59, 0.19] 2132ms
+COORD PASS synthB 'Which columns hold s' got='columns 0-1 and 8-9' [0.01, 0.01, 0.99] 1996ms
+== COORD: 5/6 mean 2139ms ==
+ASCII PASS orig 'Where is the falling' got='middle' [0.09, 0.84, 0.07] 2162ms
+ASCII FAIL orig 'Which columns hold s' got='columns 2-5' [0.05, 0.91, 0.05] 2149ms
+ASCII PASS synthA 'Where is the falling' got='middle' [0.15, 0.69, 0.15] 2138ms
+ASCII PASS synthA 'Which columns hold s' got='columns 2-5' [0.03, 0.93, 0.04] 2184ms
+ASCII PASS synthB 'Where is the falling' got='middle' [0.11, 0.78, 0.12] 2160ms
+ASCII PASS synthB 'Which columns hold s' got='columns 0-1 and 8-9' [0.02, 0.08, 0.89] 2189ms
+== ASCII: 5/6 mean 2164ms ==
+IMG PASS orig 'Where is the falling' got='middle' [0.2, 0.62, 0.18] 3203ms
+IMG FAIL orig 'Which columns hold s' got='columns 2-5' [0.11, 0.47, 0.42] 2169ms
+IMG PASS synthA 'Where is the falling' got='middle' [0.22, 0.67, 0.12] 1483ms
+IMG PASS synthA 'Which columns hold s' got='columns 2-5' [0.11, 0.47, 0.42] 1413ms
+IMG PASS synthB 'Where is the falling' got='middle' [0.2, 0.68, 0.12] 1451ms
+IMG FAIL synthB 'Which columns hold s' got='columns 2-5' [0.12, 0.49, 0.38] 1413ms
+== IMG: 4/6 mean 1855ms ==
+xpu-peak 6.34GB

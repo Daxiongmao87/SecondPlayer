@@ -142,6 +142,7 @@ Its current choices are adapter details, not core contracts:
 - `emu.takeScreenshot()` PNG transport;
 - `emu.setInput()` from `inputPolled`;
 - `--testrunner` + `xvfb-run` for headless Linux testing;
-- runtime adaptation around the MesenCE 2.2.1 `setInput` port-selection defect.
+- runtime adaptation around the MesenCE 2.2.1 `setInput` port-selection defect;
+- full-system savestates via `emu.createSavestate()` / `emu.loadSavestate()` inside a one-shot `exec` memory callback, transported length-prefixed (`STATE`) and uploaded raw after a length header (`LOADSTATE`), so blobs are binary-safe.
 
 None of these choices should be generalized into core configuration or engine APIs unless a future adapter demonstrates a genuine shared requirement.

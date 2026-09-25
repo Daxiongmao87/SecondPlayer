@@ -1,0 +1,36 @@
+# Pinned configuration for the SecondPlayer Tetris Benchmark v1.
+# Everything here is part of the benchmark definition: same file, same run.
+
+[runtime]
+model = "thaitea/laya-vision"
+device = "auto"
+reaction_ms = 100
+poll_ms = 100
+permutations = 1
+window_frames = 6
+sample = false
+learn = true
+memory_turns = 6
+offline = false
+objective = "Play the game effectively. If other players are present, treat them as teammates unless the game is clearly competitive."
+
+[adapter]
+name = "mesence"
+
+[adapter.options]
+# Pinned stock interpreter (same path on both dev machines).
+binary = "/home/agent/.local/opt/mesence/Mesen"
+# The benchmark is defined in realtime: headless testrunner sprints at max
+# speed and would end the game between two ~1s decisions.
+headless = false
+xvfb = true
+startup_timeout_s = 60
+capture_timeout_s = 5
+testrunner_timeout_s = 3600
+keep_session = false
+# Each Laya decision becomes a short tap instead of a hold until the next decision.
+pulse_frames = 9
+
+[session.players]
+1 = "ai"
+2 = "disabled"

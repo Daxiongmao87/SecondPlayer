@@ -4,6 +4,7 @@ from dataclasses import dataclass
 
 from .adapters.loader import load_adapter_module
 from .config import AppConfig
+from .platform.devices import resolve_device
 
 
 @dataclass(slots=True)
@@ -21,6 +22,12 @@ def run_checks(cfg: AppConfig) -> list[Check]:
         checks.append(Check("Laya", True, "importable"))
     except Exception as exc:
         checks.append(Check("Laya", False, str(exc)))
+
+    try:
+        compute = resolve_device(cfg.runtime.device)
+        checks.append(Check("compute", True, f"{compute.label} ({compute.reason})"))
+    except Exception as exc:
+        checks.append(Check("compute", False, str(exc)))
 
     try:
         module = load_adapter_module(cfg.adapter.name)

@@ -1,0 +1,43 @@
+# OpenJev contender for the SecondPlayer Tetris Benchmark v1.
+# Same loop/pins as bench-tetris.toml; only the policy changes (Laya -> OpenJev
+# grid-then-decide over the 4B qint4 readout, 2.79GB peak on Arc).
+# Needs the benchmark ROM (see docs/BENCHMARK_TETRIS.md) and the quant dir.
+
+[runtime]
+model = "Qwen/Qwen3.5-4B"
+openjev_weights = "/data/tmp/ojcore/qwen3.5-4b-qint4e"
+quant_backend = "quanto_qint4"
+# Validated display geometry for the 256x224 benchmark renderer
+# (ox,oy,cell_w,cell_h,cols,rows); probes in docs/OJCORE_PROBE.md.
+screen_grid = "93,44,8,8.2,10,20"
+device = "auto"
+reaction_ms = 100
+poll_ms = 100
+permutations = 1
+window_frames = 6
+sample = false
+learn = true
+memory_turns = 6
+offline = true
+objective = "Play the game effectively. If other players are present, treat them as teammates unless the game is clearly competitive."
+
+[adapter]
+name = "mesence"
+
+[adapter.options]
+# Pinned stock interpreter (same path on both dev machines).
+binary = "/home/agent/.local/opt/mesence/Mesen"
+# The benchmark is defined in realtime: headless testrunner sprints at max
+# speed and would end the game between two ~1s decisions.
+headless = false
+xvfb = true
+startup_timeout_s = 60
+capture_timeout_s = 5
+testrunner_timeout_s = 3600
+keep_session = false
+# Each decision becomes a short tap instead of a hold until the next decision.
+pulse_frames = 9
+
+[session.players]
+1 = "ai"
+2 = "disabled"

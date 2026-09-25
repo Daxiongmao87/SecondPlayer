@@ -4,6 +4,7 @@ import json
 import logging
 import os
 import shutil
+import signal
 import socket
 import subprocess
 import tempfile
@@ -26,6 +27,7 @@ log = logging.getLogger(__name__)
 
 _PROTOCOL_VERSION = 1
 _ALLOWED_ROM_EXTENSIONS = {".sfc", ".smc"}
+_STATE_MAX_BYTES = 64 * 1024 * 1024
 _BUTTON_BITS = {button: bit for bit, button in enumerate(SNES_BUTTONS)}
 
 
@@ -41,6 +43,7 @@ class MesenCEOptions:
     source_config_home: str | None = None
     session_root: str | None = None
     deterministic: bool = False
+    pulse_frames: int = 0
 
     @classmethod
     def from_mapping(cls, raw: dict[str, Any]) -> "MesenCEOptions":
@@ -61,6 +64,10 @@ class MesenCEOptions:
             values["testrunner_timeout_s"] = int(values["testrunner_timeout_s"])
             if values["testrunner_timeout_s"] <= 0:
                 raise AdapterError("adapter.options.testrunner_timeout_s must be > 0")
+        if "pulse_frames" in values:
+            values["pulse_frames"] = int(values["pulse_frames"])
+            if values["pulse_frames"] < 0:
+                raise AdapterError("adapter.options.pulse_frames must be >= 0")
         return cls(**values)
 
 
@@ -90,7 +97,9 @@ class MesenCEAdapter(EmulatorAdapter):
 
     @property
     def game_name(self) -> str:
-        return self.rom.stem
+        # Human-readable title bait for the model's world knowledge; purely
+        # mechanical normalization, the same for every game.
+        return self.rom.stem.replace("_", " ").replace("-", " ").strip()
 
     @property
     def session_root(self) -> Path | None:
@@ -195,13 +204,22 @@ class MesenCEAdapter(EmulatorAdapter):
             patch["Snes"].update({"RamPowerOnState": 1, "EnableRandomPowerOnState": False})
         self._deep_merge(settings, patch)
         (self._mesen_config / "settings.json").write_text(
-            json.dumps(settings, indent=2, sort_keys=True) + "
-", encoding="utf-8"
+            json.dumps(settings, indent=2, sort_keys=True) + "\n", encoding="utf-8"
         )
 
         bridge_bytes = resources.files(__package__).joinpath("bridge.lua").read_bytes()
         self._bridge_path = self._root / "secondplayer.lua"
         self._bridge_path.write_bytes(bridge_bytes)
+
+    def _bridge_env(self, port: int) -> dict[str, str]:
+        assert self._home is not None
+        env = os.environ.copy()
+        env["HOME"] = str(self._home)
+        env["SECONDPLAYER_BRIDGE_HOST"] = "127.0.0.1"
+        env["SECONDPLAYER_BRIDGE_PORT"] = str(port)
+        env["SECONDPLAYER_PULSE_FRAMES"] = str(self.options.pulse_frames)
+        env["DOTNET_ROLL_FORWARD"] = env.get("DOTNET_ROLL_FORWARD", "Major")
+        return env
 
     def _build_command(self, binary: Path) -> list[str]:
         assert self._bridge_path is not None
@@ -213,13 +231,14 @@ class MesenCEAdapter(EmulatorAdapter):
                 str(self._bridge_path),
                 f"--timeout={self.options.testrunner_timeout_s}",
             ]
-            if self.options.xvfb:
-                xvfb = shutil.which("xvfb-run")
-                if not xvfb:
-                    raise AdapterError("headless MesenCE requested but xvfb-run is not installed")
-                cmd = [xvfb, "-a", *cmd]
-            return cmd
-        return [str(binary), "--doNotSaveSettings", str(self.rom), str(self._bridge_path)]
+        else:
+            cmd = [str(binary), "--doNotSaveSettings", str(self.rom), str(self._bridge_path)]
+        if self.options.xvfb and not os.environ.get("DISPLAY"):
+            xvfb = shutil.which("xvfb-run")
+            if not xvfb:
+                raise AdapterError("no X display and xvfb-run is not installed")
+            cmd = [xvfb, "-a", *cmd]
+        return cmd
 
     def start(self) -> None:
         if self._process is not None:
@@ -238,49 +257,55 @@ class MesenCEAdapter(EmulatorAdapter):
         self._listener = listener
         port = int(listener.getsockname()[1])
 
-        env = os.environ.copy()
-        env["HOME"] = str(self._home)
-        env["SECONDPLAYER_BRIDGE_HOST"] = "127.0.0.1"
-        env["SECONDPLAYER_BRIDGE_PORT"] = str(port)
-        env["DOTNET_ROLL_FORWARD"] = env.get("DOTNET_ROLL_FORWARD", "Major")
+        env = self._bridge_env(port)
 
         stdout = (self._root / "mesen.stdout.log").open("wb")
         stderr = (self._root / "mesen.stderr.log").open("wb")
         cmd = self._build_command(binary)
         log.info("launching stock MesenCE: %s", cmd)
+        # Any failure from here on must not leak the child process, the bridge
+        # listener, or the session directory.
         try:
-            self._process = subprocess.Popen(
-                cmd,
-                cwd=str(self._root),
-                env=env,
-                stdin=subprocess.DEVNULL,
-                stdout=stdout,
-                stderr=stderr,
-            )
-        finally:
-            stdout.close()
-            stderr.close()
-
-        deadline = time.monotonic() + self.options.startup_timeout_s
-        conn: socket.socket | None = None
-        while time.monotonic() < deadline:
-            if self._process.poll() is not None:
-                raise self._startup_error(f"MesenCE exited before the Lua bridge connected (code {self._process.returncode})")
             try:
-                conn, _ = listener.accept()
-                break
-            except socket.timeout:
-                continue
-        if conn is None:
-            raise self._startup_error("timed out waiting for the MesenCE Lua bridge")
+                self._process = subprocess.Popen(
+                    cmd,
+                    cwd=str(self._root),
+                    env=env,
+                    stdin=subprocess.DEVNULL,
+                    stdout=stdout,
+                    stderr=stderr,
+                    # Own process group: under xvfb-run the emulator is a
+                    # grandchild, so close() must signal the group, not just
+                    # the wrapper, or MesenCE leaks on every run.
+                    start_new_session=True,
+                )
+            finally:
+                stdout.close()
+                stderr.close()
 
-        conn.settimeout(self.options.capture_timeout_s)
-        self._sock = conn
-        self._reader = conn.makefile("rb")
-        hello = self._readline()
-        parts = hello.split()
-        if len(parts) != 2 or parts[0] != "HELLO" or parts[1] != str(_PROTOCOL_VERSION):
-            raise self._startup_error(f"unexpected bridge greeting: {hello!r}")
+            deadline = time.monotonic() + self.options.startup_timeout_s
+            conn: socket.socket | None = None
+            while time.monotonic() < deadline:
+                if self._process.poll() is not None:
+                    raise self._startup_error(f"MesenCE exited before the Lua bridge connected (code {self._process.returncode})")
+                try:
+                    conn, _ = listener.accept()
+                    break
+                except socket.timeout:
+                    continue
+            if conn is None:
+                raise self._startup_error("timed out waiting for the MesenCE Lua bridge")
+
+            conn.settimeout(self.options.capture_timeout_s)
+            self._sock = conn
+            self._reader = conn.makefile("rb")
+            hello = self._readline()
+            parts = hello.split()
+            if len(parts) != 2 or parts[0] != "HELLO" or parts[1] != str(_PROTOCOL_VERSION):
+                raise self._startup_error(f"unexpected bridge greeting: {hello!r}")
+        except BaseException:
+            self.close()
+            raise
         log.info("MesenCE Lua bridge connected")
 
     def _startup_error(self, message: str) -> AdapterError:
@@ -290,9 +315,7 @@ class MesenCEAdapter(EmulatorAdapter):
             if err.is_file():
                 tail = err.read_text(encoding="utf-8", errors="replace")[-4000:].strip()
                 if tail:
-                    detail += f"
-MesenCE stderr:
-{tail}"
+                    detail += f"\nMesenCE stderr:\n{tail}"
         return AdapterError(detail)
 
     def is_running(self) -> bool:
@@ -306,8 +329,7 @@ MesenCE stderr:
         if self._sock is None:
             raise AdapterError("MesenCE bridge is not connected")
         try:
-            self._sock.sendall(line.encode("ascii") + b"
-")
+            self._sock.sendall(line.encode("ascii") + b"\n")
         except OSError as exc:
             raise AdapterError(f"MesenCE bridge send failed: {exc}") from exc
 
@@ -321,8 +343,7 @@ MesenCE stderr:
         if not raw:
             raise AdapterError("MesenCE bridge closed the connection")
         try:
-            return raw.decode("utf-8").rstrip("
-")
+            return raw.decode("utf-8").rstrip("\r\n")
         except UnicodeDecodeError as exc:
             raise AdapterError("MesenCE bridge returned a non-text protocol header") from exc
 
@@ -372,6 +393,59 @@ MesenCE stderr:
             raise AdapterError(f"MesenCE returned an invalid RGB frame shape: {frame.shape}")
         return frame
 
+    def wait_frames(self, frames: int) -> None:
+        """Block until exactly ``frames`` emulated frames elapse.
+
+        Unlike repeated capture() calls, this advances a precise frame count
+        regardless of daemon-side latency, which keeps scripted input prefix
+        frame-exact and benchmark starts deterministic.
+        """
+        if frames < 1:
+            raise AdapterError("wait_frames requires at least 1 frame")
+        request_id = self._next_id()
+        self._sendline(f"WAITFRAMES {request_id} {frames}")
+        self._response_line(request_id, "WAITED")
+
+    def save_state(self, path: str | Path) -> bytes:
+        """Capture a full-system savestate, write it to ``path``, return bytes.
+
+        The blob is transported length-prefixed and is binary-safe: it may
+        contain any byte value, including newlines and NULs.
+        """
+        request_id = self._next_id()
+        self._sendline(f"SAVESTATE {request_id}")
+        parts = self._response_line(request_id, "STATE")
+        if len(parts) != 3:
+            raise AdapterError(f"invalid STATE header: {' '.join(parts)}")
+        try:
+            length = int(parts[2])
+        except ValueError as exc:
+            raise AdapterError(f"invalid STATE payload length: {parts[2]!r}") from exc
+        if length <= 0 or length > _STATE_MAX_BYTES:
+            raise AdapterError(f"unreasonable MesenCE savestate payload size: {length}")
+        blob = self._read_exact(length)
+        Path(path).write_bytes(blob)
+        return blob
+
+    def load_state(self, state: bytes) -> None:
+        """Restore a savestate previously returned by :meth:`save_state`.
+
+        The blob is uploaded raw after a length header; no pipelining is used,
+        so embedded newlines and NULs pass through untouched.
+        """
+        if not state:
+            raise AdapterError("cannot load an empty MesenCE savestate")
+        if len(state) > _STATE_MAX_BYTES:
+            raise AdapterError(f"MesenCE savestate too large: {len(state)} bytes")
+        if self._sock is None:
+            raise AdapterError("MesenCE bridge is not connected")
+        request_id = self._next_id()
+        try:
+            self._sock.sendall(f"LOADSTATE {request_id} {len(state)}\n".encode("ascii") + state)
+        except OSError as exc:
+            raise AdapterError(f"MesenCE bridge send failed: {exc}") from exc
+        self._response_line(request_id, "OK")
+
     @staticmethod
     def _mask(state: ControllerState) -> int:
         mask = 0
@@ -392,6 +466,13 @@ MesenCE stderr:
             raise AdapterError(f"invalid INPUTSTATE response: {' '.join(parts)}")
         return int(parts[2])
 
+    @staticmethod
+    def _signal_group(pid: int, sig: int) -> None:
+        try:
+            os.killpg(pid, sig)
+        except (ProcessLookupError, PermissionError, OSError):
+            pass
+
     def close(self) -> None:
         process = self._process
         if self._sock is not None:
@@ -404,12 +485,15 @@ MesenCE stderr:
             try:
                 process.wait(timeout=1.5)
             except subprocess.TimeoutExpired:
-                process.terminate()
+                self._signal_group(process.pid, signal.SIGTERM)
                 try:
                     process.wait(timeout=3)
                 except subprocess.TimeoutExpired:
-                    process.kill()
-                    process.wait(timeout=3)
+                    self._signal_group(process.pid, signal.SIGKILL)
+                    try:
+                        process.wait(timeout=3)
+                    except subprocess.TimeoutExpired:
+                        pass
 
         if self._reader is not None:
             try:

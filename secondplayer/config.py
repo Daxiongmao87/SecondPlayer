@@ -14,14 +14,20 @@ PlayerMode = Literal["human", "ai", "disabled"]
 @dataclass(slots=True)
 class RuntimeConfig:
     model: str = "thaitea/laya-vision"
-    device: str = "cpu"
+    openjev_weights: str = ""
+    quant_backend: str = "quanto_qint4"
+    # Display geometry for the text backend's cell grid: "ox,oy,cell_w,cell_h,cols,rows"
+    # in pixels (blank = whole-frame adaptive). Renderer data, not game rules.
+    screen_grid: str = ""
+    device: str = "auto"
     reaction_ms: int = 200
     permutations: int = 1
-    frames: int = 1
+    poll_ms: int = 100
+    window_frames: int = 6
     sample: bool = False
-    objective: str = (
-        "Play the game effectively. If other players are present, treat them as teammates unless the game is clearly competitive."
-    )
+    learn: bool = False
+    memory_turns: int = 4
+    objective: str = "Play the game effectively. If other players are present, treat them as teammates unless the game is clearly competitive."
     offline: bool = False
 
 
@@ -125,26 +131,45 @@ def load_config(path: str | Path | None = None) -> AppConfig:
         raise ConfigurationError("reaction_ms must be >= 0")
     if cfg.runtime.permutations < 1:
         raise ConfigurationError("permutations must be >= 1")
-    if cfg.runtime.frames not in (1, 2):
-        raise ConfigurationError("frames must be 1 or 2")
+    if cfg.runtime.poll_ms < 1:
+        raise ConfigurationError("poll_ms must be >= 1")
+    if cfg.runtime.window_frames < 1:
+        raise ConfigurationError("window_frames must be >= 1")
+    if cfg.runtime.memory_turns < 1:
+        raise ConfigurationError("memory_turns must be >= 1")
     if not cfg.session.ai_players:
         raise ConfigurationError("at least one player must be assigned to ai")
     return cfg
 
 
-DEFAULT_TOML = '''# SecondPlayer configuration
+DEFAULT_TOML = """# SecondPlayer configuration
 
 [runtime]
 # Release builds are expected to bundle this checkpoint locally.
 model = "thaitea/laya-vision"
-device = "cpu"
+# OpenJev 4-bit decider: baked-in weights dir (empty = use `model` as-is).
+openjev_weights = ""
+# Backend for the decider: none | quanto_qint4 | torchao_int4 | awq.
+quant_backend = "quanto_qint4"
+# Cell-grid region for the text backend's screen reader, as
+# "ox,oy,cell_w,cell_h,cols,rows" in pixels; blank covers the whole frame.
+# Display geometry for the renderer (like screen resolution), never game rules.
+screen_grid = ""
+device = "auto"
 # Minimum wall-clock gap between submitted decisions. If inference is slower,
 # the current controller state simply remains held until the result arrives.
 reaction_ms = 200
 permutations = 1
-frames = 1
+# Visual poll rate: capture up to this often, but only run inference when the
+# scene changed (or the 1s heartbeat fires on a frozen screen).
+poll_ms = 100
+# Sliding window: up to this many recent frames + their control choices are
+# kept in the model state, trimmed to fit the checkpoint's context window.
+window_frames = 6
 sample = false
 offline = false
+learn = false
+memory_turns = 4
 objective = "Play the game effectively. If other players are present, treat them as teammates unless the game is clearly competitive."
 
 # Adapter-specific behavior is opaque to core SecondPlayer. The selected adapter
@@ -160,7 +185,7 @@ xvfb = true
 [session.players]
 1 = "human"
 2 = "ai"
-'''
+"""
 
 
 def write_default_config(path: str | Path | None = None, overwrite: bool = False) -> Path:

@@ -1,0 +1,360 @@
+{
+  "benchmark": "tetris-v1",
+  "rom_sha256": "62cef84f03ea6f3d0a05cc399731da193e01f0aee54e01b13ad08fb98b4a427c",
+  "rom_bytes": 1049088,
+  "state_sha256": "a2282a933ceabcadce077bb594abed21457135871aac98f349da5459d1cbabbe",
+  "started_at": "2026-09-24T20:17:10.241850+00:00",
+  "duration_s": 87.17,
+  "reason": "game_over",
+  "detail": "",
+  "final": {
+    "score": 0,
+    "top": 10000,
+    "lines": 0,
+    "level": 0,
+    "stats": [
+      2,
+      2,
+      1,
+      0,
+      3,
+      3,
+      0
+    ]
+  },
+  "decisions": 19,
+  "cadence_hz": 0.218,
+  "polls": 20,
+  "poll_hz": 0.229,
+  "snaps": 0,
+  "reached_gameplay": true,
+  "gameplay_at_s": 0.52,
+  "mode": "a-type",
+  "lines_start": 0,
+  "lines_cleared": 0,
+  "failures": 0,
+  "decode_gaps": 0,
+  "infer_ms": {
+    "n": 19,
+    "mean": 4413.099628738372,
+    "p50": 4401.669326936826,
+    "p95": 5461.281961994246,
+    "max": 5461.281961994246
+  },
+  "confidence": {
+    "movement": {
+      "n": 19,
+      "mean": 0.62717262414644,
+      "p50": 0.64344305262347,
+      "p95": 0.7681915382968321,
+      "max": 0.7681915382968321
+    },
+    "buttons": {
+      "n": 19,
+      "mean": 0.6173508005635625,
+      "p50": 0.609747890339194,
+      "p95": 0.7252800829660646,
+      "max": 0.7252800829660646
+    }
+  },
+  "learning": {
+    "turns": 20,
+    "facts": {
+      "neutral->acted": {
+        "count": 18,
+        "conf": 1.0
+      },
+      "neutral->menu": {
+        "count": 1,
+        "conf": 1.0
+      }
+    },
+    "tried": {
+      "neutral": 20
+    },
+    "forced": 0,
+    "effects": {
+      "none": 1,
+      "menu": 1,
+      "acted": 18
+    },
+    "log": [
+      {
+        "turn": 0,
+        "player": 1,
+        "applied": "neutral",
+        "forced": false,
+        "observed": "first screen, nothing to compare yet",
+        "effect": "none",
+        "screen": "The screen grid is 10 columns (0-9, left to right) by 20 rows (0-19, top to bottom). Changed cells are the moving object; other filled cells are static.\nCurrent frame filled cells (row,col), row 0 top, col 0 is left: none\nCells that changed between the previous frame and this frame: first screen, nothing to compare yet"
+      },
+      {
+        "turn": 1,
+        "player": 1,
+        "applied": "neutral",
+        "forced": false,
+        "observed": "full-screen flip (menu change, death, or transition?)",
+        "effect": "menu",
+        "screen": "The screen grid is 10 columns (0-9, left to right) by 20 rows (0-19, top to bottom). Changed cells are the moving object; other filled cells are static.\nCurrent frame filled cells (row,col), row 0 top, col 0 is left: (10,4) (10,5) (10,6) (11,4)\nCells that changed between the previous frame and this frame: (10,4) (10,5) (10,6) (11,4)"
+      },
+      {
+        "turn": 2,
+        "player": 1,
+        "applied": "neutral",
+        "forced": false,
+        "observed": "motion middle, bottom (small)",
+        "effect": "acted",
+        "screen": "The screen grid is 10 columns (0-9, left to right) by 20 rows (0-19, top to bottom). Changed cells are the moving object; other filled cells are static.\nCurrent frame filled cells (row,col), row 0 top, col 0 is left: (15,4) (15,5) (15,6) (16,4)\nCells that changed between the previous frame and this frame: (10,4) (10,5) (10,6) (11,4) (15,4) (15,5) (15,6) (16,4)"
+      },
+      {
+        "turn": 3,
+        "player": 1,
+        "applied": "neutral",
+        "forced": false,
+        "observed": "motion bottom, top-right (medium)",
+        "effect": "acted",
+        "screen": "The screen grid is 10 columns (0-9, left to right) by 20 rows (0-19, top to bottom). Changed cells are the moving object; other filled cells are static.\nCurrent frame filled cells (row,col), row 0 top, col 0 is left: (0,4) (0,5) (0,6) (1,4) (1,5) (1,6) (2,4) (18,4) (18,5) (18,6) (19,4)\nCells that changed between the previous frame and this frame: (0,4) (0,5) (0,6) (1,4) (1,5) (1,6) (2,4) (15,4) (15,5) (15,6) (16,4) (18,4) (18,5) (18,6) (19,4)"
+      },
+      {
+        "turn": 4,
+        "player": 1,
+        "applied": "neutral",
+        "forced": false,
+        "observed": "motion top, middle (small)",
+        "effect": "acted",
+        "screen": "The screen grid is 10 columns (0-9, left to right) by 20 rows (0-19, top to bottom). Changed cells are the moving object; other filled cells are static.\nCurrent frame filled cells (row,col), row 0 top, col 0 is left: (5,4) (5,5) (5,6) (6,4) (6,5) (18,4) (18,5) (18,6) (19,4)\nCells that changed between the previous frame and this frame: (0,4) (0,5) (0,6) (1,4) (1,5) (1,6) (2,4) (5,4) (5,5) (5,6) (6,4) (6,5)"
+      },
+      {
+        "turn": 5,
+        "player": 1,
+        "applied": "neutral",
+        "forced": false,
+        "observed": "motion middle (small)",
+        "effect": "acted",
+        "screen": "The screen grid is 10 columns (0-9, left to right) by 20 rows (0-19, top to bottom). Changed cells are the moving object; other filled cells are static.\nCurrent frame filled cells (row,col), row 0 top, col 0 is left: (10,4) (10,5) (10,6) (11,4) (18,4) (18,5) (18,6) (19,4)\nCells that changed between the previous frame and this frame: (5,4) (5,5) (5,6) (6,4) (6,5) (10,4) (10,5) (10,6) (11,4)"
+      },
+      {
+        "turn": 6,
+        "player": 1,
+        "applied": "neutral",
+        "forced": false,
+        "observed": "motion middle, bottom (small)",
+        "effect": "acted",
+        "screen": "The screen grid is 10 columns (0-9, left to right) by 20 rows (0-19, top to bottom). Changed cells are the moving object; other filled cells are static.\nCurrent frame filled cells (row,col), row 0 top, col 0 is left: (15,4) (15,5) (15,6) (16,4) (18,4) (18,5) (18,6) (19,4)\nCells that changed between the previous frame and this frame: (10,4) (10,5) (10,6) (11,4) (15,4) (15,5) (15,6) (16,4)"
+      },
+      {
+        "turn": 7,
+        "player": 1,
+        "applied": "neutral",
+        "forced": false,
+        "observed": "motion bottom, middle (medium)",
+        "effect": "acted",
+        "screen": "The screen grid is 10 columns (0-9, left to right) by 20 rows (0-19, top to bottom). Changed cells are the moving object; other filled cells are static.\nCurrent frame filled cells (row,col), row 0 top, col 0 is left: (4,6) (16,4) (16,5) (16,6) (17,4) (18,4) (18,5) (18,6) (19,4)\nCells that changed between the previous frame and this frame: (4,6) (15,4) (15,5) (15,6) (16,5) (16,6) (17,4)"
+      },
+      {
+        "turn": 8,
+        "player": 1,
+        "applied": "neutral",
+        "forced": false,
+        "observed": "motion middle, top (small)",
+        "effect": "acted",
+        "screen": "The screen grid is 10 columns (0-9, left to right) by 20 rows (0-19, top to bottom). Changed cells are the moving object; other filled cells are static.\nCurrent frame filled cells (row,col), row 0 top, col 0 is left: (8,4) (8,5) (8,6) (9,6) (16,4) (16,5) (16,6) (17,4) (18,4) (18,5) (18,6) (19,4)\nCells that changed between the previous frame and this frame: (4,6) (8,4) (8,5) (8,6) (9,6)"
+      },
+      {
+        "turn": 9,
+        "player": 1,
+        "applied": "neutral",
+        "forced": false,
+        "observed": "motion middle, bottom (small)",
+        "effect": "acted",
+        "screen": "The screen grid is 10 columns (0-9, left to right) by 20 rows (0-19, top to bottom). Changed cells are the moving object; other filled cells are static.\nCurrent frame filled cells (row,col), row 0 top, col 0 is left: (14,4) (14,5) (14,6) (15,6) (16,4) (16,5) (16,6) (17,4) (18,4) (18,5) (18,6) (19,4)\nCells that changed between the previous frame and this frame: (8,4) (8,5) (8,6) (9,6) (14,4) (14,5) (14,6) (15,6)"
+      },
+      {
+        "turn": 10,
+        "player": 1,
+        "applied": "neutral",
+        "forced": false,
+        "observed": "motion top-right, middle (medium)",
+        "effect": "acted",
+        "screen": "The screen grid is 10 columns (0-9, left to right) by 20 rows (0-19, top to bottom). Changed cells are the moving object; other filled cells are static.\nCurrent frame filled cells (row,col), row 0 top, col 0 is left: (5,4) (5,5) (6,5) (6,6) (14,4) (14,5) (14,6) (15,6) (16,4) (16,5) (16,6) (17,4) (18,4) (18,5) (18,6) (19,4)\nCells that changed between the previous frame and this frame: (5,4) (5,5) (6,5) (6,6)"
+      },
+      {
+        "turn": 11,
+        "player": 1,
+        "applied": "neutral",
+        "forced": false,
+        "observed": "motion middle, bottom (small)",
+        "effect": "acted",
+        "screen": "The screen grid is 10 columns (0-9, left to right) by 20 rows (0-19, top to bottom). Changed cells are the moving object; other filled cells are static.\nCurrent frame filled cells (row,col), row 0 top, col 0 is left: (11,4) (11,5) (12,5) (12,6) (14,4) (14,5) (14,6) (15,6) (16,4) (16,5) (16,6) (17,4) (18,4) (18,5) (18,6) (19,4)\nCells that changed between the previous frame and this frame: (5,4) (5,5) (6,5) (6,6) (11,4) (11,5) (12,5) (12,6)"
+      },
+      {
+        "turn": 12,
+        "player": 1,
+        "applied": "neutral",
+        "forced": false,
+        "observed": "motion middle, top-right (medium)",
+        "effect": "acted",
+        "screen": "The screen grid is 10 columns (0-9, left to right) by 20 rows (0-19, top to bottom). Changed cells are the moving object; other filled cells are static.\nCurrent frame filled cells (row,col), row 0 top, col 0 is left: (3,5) (3,6) (4,4) (4,5) (4,6) (12,4) (12,5) (13,5) (13,6) (14,4) (14,5) (14,6) (15,6) (16,4) (16,5) (16,6) (17,4) (18,4) (18,5) (18,6) (19,4)\nCells that changed between the previous frame and this frame: (3,5) (3,6) (4,4) (4,5) (4,6) (11,4) (11,5) (12,4) (12,6) (13,5) (13,6)"
+      },
+      {
+        "turn": 13,
+        "player": 1,
+        "applied": "neutral",
+        "forced": false,
+        "observed": "motion middle, top (small)",
+        "effect": "acted",
+        "screen": "The screen grid is 10 columns (0-9, left to right) by 20 rows (0-19, top to bottom). Changed cells are the moving object; other filled cells are static.\nCurrent frame filled cells (row,col), row 0 top, col 0 is left: (9,5) (9,6) (10,4) (10,5) (12,4) (12,5) (13,5) (13,6) (14,4) (14,5) (14,6) (15,6) (16,4) (16,5) (16,6) (17,4) (18,4) (18,5) (18,6) (19,4)\nCells that changed between the previous frame and this frame: (3,5) (3,6) (4,4) (4,5) (4,6) (9,5) (9,6) (10,4) (10,5)"
+      },
+      {
+        "turn": 14,
+        "player": 1,
+        "applied": "neutral",
+        "forced": false,
+        "observed": "motion middle, top-right (medium)",
+        "effect": "acted",
+        "screen": "The screen grid is 10 columns (0-9, left to right) by 20 rows (0-19, top to bottom). Changed cells are the moving object; other filled cells are static.\nCurrent frame filled cells (row,col), row 0 top, col 0 is left: (2,4) (2,5) (2,6) (3,4) (3,5) (3,6) (10,5) (10,6) (11,4) (11,5) (12,4) (12,5) (13,5) (13,6) (14,4) (14,5) (14,6) (15,6) (16,4) (16,5) (16,6) (17,4) (18,4) (18,5) (18,6) (19,4)\nCells that changed between the previous frame and this frame: (2,4) (2,5) (2,6) (3,4) (3,5) (3,6) (9,5) (9,6) (10,4) (10,6) (11,4) (11,5)"
+      },
+      {
+        "turn": 15,
+        "player": 1,
+        "applied": "neutral",
+        "forced": false,
+        "observed": "motion middle, top (small)",
+        "effect": "acted",
+        "screen": "The screen grid is 10 columns (0-9, left to right) by 20 rows (0-19, top to bottom). Changed cells are the moving object; other filled cells are static.\nCurrent frame filled cells (row,col), row 0 top, col 0 is left: (8,4) (8,5) (8,6) (9,5) (10,5) (10,6) (11,4) (11,5) (12,4) (12,5) (13,5) (13,6) (14,4) (14,5) (14,6) (15,6) (16,4) (16,5) (16,6) (17,4) (18,4) (18,5) (18,6) (19,4)\nCells that changed between the previous frame and this frame: (2,4) (2,5) (2,6) (3,4) (3,5) (3,6) (8,4) (8,5) (8,6) (9,5)"
+      },
+      {
+        "turn": 16,
+        "player": 1,
+        "applied": "neutral",
+        "forced": false,
+        "observed": "motion middle, bottom-left (small)",
+        "effect": "acted",
+        "screen": "The screen grid is 10 columns (0-9, left to right) by 20 rows (0-19, top to bottom). Changed cells are the moving object; other filled cells are static.\nCurrent frame filled cells (row,col), row 0 top, col 0 is left: (4,5) (4,6) (5,4) (5,5) (5,6) (8,4) (8,5) (8,6) (9,5) (10,5) (10,6) (11,4) (11,5) (12,4) (12,5) (13,5) (13,6) (14,4) (14,5) (14,6) (15,6) (16,4) (16,5) (16,6) (17,4) (18,4) (18,5) (18,6) (19,4)\nCells that changed between the previous frame and this frame: (4,5) (4,6) (5,4) (5,5) (5,6)"
+      },
+      {
+        "turn": 17,
+        "player": 1,
+        "applied": "neutral",
+        "forced": false,
+        "observed": "motion middle, top-right (medium)",
+        "effect": "acted",
+        "screen": "The screen grid is 10 columns (0-9, left to right) by 20 rows (0-19, top to bottom). Changed cells are the moving object; other filled cells are static.\nCurrent frame filled cells (row,col), row 0 top, col 0 is left: (2,5) (2,6) (3,4) (3,5) (3,6) (4,4) (4,5) (6,5) (6,6) (7,4) (7,5) (7,6) (8,4) (8,5) (8,6) (9,5) (10,5) (10,6) (11,4) (11,5) (12,4) (12,5) (13,5) (13,6) (14,4) (14,5) (14,6) (15,6) (16,4) (16,5) (16,6) (17,4) (18,4) (18,5) (18,6) (19,4)\nCells that changed between the previous frame and this frame: (2,5) (2,6) (3,4) (3,5) (3,6) (4,4) (4,6) (5,4) (5,5) (5,6) (6,5) (6,6) (7,4) (7,5) (7,6)"
+      },
+      {
+        "turn": 18,
+        "player": 1,
+        "applied": "neutral",
+        "forced": false,
+        "observed": "motion middle, top-right (medium)",
+        "effect": "acted",
+        "screen": "The screen grid is 10 columns (0-9, left to right) by 20 rows (0-19, top to bottom). Changed cells are the moving object; other filled cells are static.\nCurrent frame filled cells (row,col), row 0 top, col 0 is left: (3,6) (4,5) (4,6) (5,4) (5,5) (5,6) (6,5) (6,6) (7,4) (7,5) (7,6) (8,4) (8,5) (8,6) (9,5) (10,5) (10,6) (11,4) (11,5) (12,4) (12,5) (13,5) (13,6) (14,4) (14,5) (14,6) (15,6) (16,4) (16,5) (16,6) (17,4) (18,4) (18,5) (18,6) (19,4)\nCells that changed between the previous frame and this frame: (2,5) (2,6) (3,4) (3,5) (4,4) (4,6) (5,4) (5,5) (5,6)"
+      },
+      {
+        "turn": 19,
+        "player": 1,
+        "applied": "neutral",
+        "forced": false,
+        "observed": "motion middle, top (medium)",
+        "effect": "acted",
+        "screen": "The screen grid is 10 columns (0-9, left to right) by 20 rows (0-19, top to bottom). Changed cells are the moving object; other filled cells are static.\nCurrent frame filled cells (row,col), row 0 top, col 0 is left: (0,4) (0,5) (0,6) (1,4) (1,5) (1,6) (2,4) (2,5) (2,6) (3,6) (4,3) (4,5) (4,6) (5,3) (5,4) (5,5) (5,6) (6,3) (6,4) (6,5) (6,6) (7,3) (7,4) (7,5) (7,6) (8,4) (8,5) (8,6) (9,5) (10,5) (10,6) (11,4) (11,5) (12,4) (12,5) (13,5) (13,6) (14,4) (14,5) (14,6) (15,6) (16,4) (16,5) (16,6) (17,4) (18,4) (18,5) (18,6) (19,4)\nCells that changed between the previous frame and this frame: (0,4) (0,5) (0,6) (1,4) (1,5) (1,6) (2,4) (2,5) (2,6) (4,3) (5,3) (6,3) (6,4) (7,3)"
+      }
+    ]
+  },
+  "trace": [
+    [
+      0.52,
+      0
+    ],
+    [
+      4.1,
+      0
+    ],
+    [
+      7.99,
+      0
+    ],
+    [
+      12.05,
+      0
+    ],
+    [
+      16.08,
+      0
+    ],
+    [
+      20.17,
+      0
+    ],
+    [
+      24.41,
+      0
+    ],
+    [
+      28.54,
+      0
+    ],
+    [
+      34.06,
+      0
+    ],
+    [
+      39.24,
+      0
+    ],
+    [
+      43.78,
+      0
+    ],
+    [
+      48.13,
+      0
+    ],
+    [
+      52.74,
+      0
+    ],
+    [
+      57.16,
+      0
+    ],
+    [
+      61.6,
+      0
+    ],
+    [
+      66.23,
+      0
+    ],
+    [
+      70.9,
+      0
+    ],
+    [
+      75.49,
+      0
+    ],
+    [
+      80.4,
+      0
+    ],
+    [
+      85.47,
+      0
+    ]
+  ],
+  "config": {
+    "model": "Qwen/Qwen3.5-4B",
+    "screen_grid": "93,44,8,8.2,10,20",
+    "openjev_weights": "/data/tmp/ojcore/qwen3.5-4b-qint4e",
+    "quant_backend": "quanto_qint4",
+    "device": "auto",
+    "reaction_ms": 100,
+    "poll_ms": 100,
+    "permutations": 1,
+    "window_frames": 6,
+    "sample": false,
+    "learn": true,
+    "memory_turns": 6
+  }
+}

@@ -156,7 +156,8 @@ model = "thaitea/laya-vision"
 device = "cpu"
 reaction_ms = 200
 permutations = 1
-frames = 1
+poll_ms = 100
+window_frames = 6
 sample = false
 
 [adapter]
@@ -200,10 +201,11 @@ The bridge should tolerate the daemon temporarily being unavailable without cras
 
 Preferred observation is the actual emulator framebuffer before desktop scaling/shaders/window chrome.
 
-The policy currently accepts one or two frames:
-
-- `frames = 1`: current framebuffer;
-- `frames = 2`: previous decision frame + current frame.
+The loop polls the framebuffer at `poll_ms` and runs inference only when
+the scene changed (see `PollGate`; 1s heartbeat on frozen screens). The
+policy state carries a sliding window of up to `window_frames` recent
+native-resolution frames plus their control choices, trimmed per decision
+to fit the checkpoint's context window (see `fit_window`).
 
 For v1 the adapter uses `emu.takeScreenshot()`, which stock MesenCE explicitly returns as an in-memory PNG binary string. This avoids desktop capture and avoids iterating the entire Lua `getScreenBuffer()` table solely to repack pixels into a socket payload. Python decodes the PNG into the core's RGB `numpy.ndarray` contract.
 

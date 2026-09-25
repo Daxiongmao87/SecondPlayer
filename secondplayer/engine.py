@@ -8,6 +8,7 @@ from dataclasses import dataclass
 from .adapters.base import EmulatorAdapter
 from .controller import NEUTRAL
 from .policy.laya import LayaVisionPolicy, PlayerDecision
+from .policy.memory import PollGate
 
 log = logging.getLogger(__name__)
 
@@ -16,6 +17,7 @@ log = logging.getLogger(__name__)
 class EngineStats:
     decisions: int = 0
     failures: int = 0
+    polls: int = 0
     last_inference_ms: float = 0.0
 
 
@@ -27,11 +29,19 @@ class SecondPlayerEngine:
     successfully applied state.
     """
 
-    def __init__(self, adapter: EmulatorAdapter, policy: LayaVisionPolicy, players: list[int], reaction_ms: int):
+    def __init__(
+        self,
+        adapter: EmulatorAdapter,
+        policy: LayaVisionPolicy,
+        players: list[int],
+        reaction_ms: int,
+        poll_ms: int = 100,
+    ):
         self.adapter = adapter
         self.policy = policy
         self.players = players
-        self.reaction_s = reaction_ms / 1000.0
+        self.poll_s = poll_ms / 1000.0
+        self.gate = PollGate(min_gap_s=max(reaction_ms, 0) / 1000.0)
         self.stats = EngineStats()
 
     @staticmethod
@@ -43,7 +53,7 @@ class SecondPlayerEngine:
     def run(self) -> EngineStats:
         self.adapter.start()
         future: concurrent.futures.Future | None = None
-        next_submit = 0.0
+        next_poll = 0.0
         with concurrent.futures.ThreadPoolExecutor(max_workers=1, thread_name_prefix="secondplayer-laya") as pool:
             try:
                 while self.adapter.is_running():
@@ -69,15 +79,20 @@ class SecondPlayerEngine:
                                 self.adapter.apply(player, NEUTRAL)
                         future = None
 
-                    if future is None and now >= next_submit:
+                    if future is None and now >= next_poll:
                         try:
                             frame = self.adapter.capture()
-                            future = pool.submit(self._infer, self.policy, frame, self.players, self.adapter.game_name)
-                            next_submit = now + self.reaction_s
                         except Exception:
                             self.stats.failures += 1
                             log.exception("capture failed")
-                            next_submit = now + max(0.1, self.reaction_s)
+                            next_poll = now + max(0.1, self.poll_s)
+                            time.sleep(0.005)
+                            continue
+                        self.stats.polls += 1
+                        fire, _ = self.gate.poll(frame, now)
+                        if fire:
+                            future = pool.submit(self._infer, self.policy, frame, self.players, self.adapter.game_name)
+                        next_poll = now + self.poll_s
                     time.sleep(0.005)
             finally:
                 for player in self.players:

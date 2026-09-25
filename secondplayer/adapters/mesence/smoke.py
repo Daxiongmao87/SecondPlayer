@@ -31,12 +31,20 @@ def main(argv: list[str] | None = None) -> int:
         print(f"capture: {frame.shape[1]}x{frame.shape[0]} RGB")
 
         probe = ControllerState.from_buttons(["A", "RIGHT"])
-        adapter.apply(2, probe)
-        time.sleep(0.05)
-        adapter.capture()  # cross at least one input/frame boundary
-        observed = adapter._get_input_mask(2)
         expected = adapter._mask(probe)
+        adapter.apply(2, probe)
+        # INPUT is stored on receipt but applied at the next inputPolled, so a
+        # single capture round-trip can observe the previous port state. Poll
+        # until the injected state is reported or the wait is exhausted.
+        deadline = time.monotonic() + 10.0
+        observed = None
+        while time.monotonic() < deadline:
+            adapter.capture()
+            observed = adapter._get_input_mask(2)
+            if observed == expected:
+                break
         print(f"player2 input: expected=0x{expected:03x} observed=0x{observed:03x}")
+        print(f"setinput mode: {adapter._input_mode}")
         if observed != expected:
             print("FAIL: MesenCE did not report the injected Player 2 state")
             return 3

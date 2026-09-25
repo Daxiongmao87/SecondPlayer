@@ -1,11 +1,23 @@
 [runtime]
 model = "thaitea/laya-vision"
-device = "cpu"
+# auto resolves NVIDIA CUDA -> AMD ROCm -> Intel XPU -> Apple MPS -> CPU.
+# Any explicit choice falls back to CPU when unavailable.
+device = "auto"
 reaction_ms = 200
 permutations = 1
-frames = 1
+poll_ms = 100
+window_frames = 6
+openjev_weights = "/data/tmp/ojcore/qwen3.5-4b-qint4e"
+quant_backend = "quanto_qint4"
 sample = false
 offline = false
+# Learning scaffold: harness-kept episodic memory rendered into every call's
+# state (last action, observed change, learned facts, recent turns).
+# Attribution is harness-side (button pressed + observed motion); the model
+# reads memory but does not write it. First turns sweep each controller
+# button once so cause and effect is observed.
+learn = false
+memory_turns = 4
 objective = "Play the game effectively. If other players are present, treat them as teammates unless the game is clearly competitive."
 
 [adapter]
@@ -25,6 +37,10 @@ keep_session = false
 # session-only Lua/network permissions and SNES port configuration.
 # source_config_home = "/home/me/.config/MesenCE"
 # deterministic = false
+# Release AI-owned ports to neutral N emulated frames after the last input
+# (0 = hold each decision until the next one). Short pulses turn a slow
+# policy's decisions into taps instead of ~1s holds.
+# pulse_frames = 0
 
 [session.players]
 1 = "human"
