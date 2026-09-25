@@ -301,3 +301,94 @@ rendering"; the record claims only the end-to-end failure.
 `allowed_mass=0.000` throughout is genuine behavior (CPU float32
 reference bit-matches XPU); relative letter order still decides, and
 it decides by fixed prior. Scripts: `probes/2026-09-24-drive/pj*.py`.
+
+## 12. Laya-201M pinned baseline: timeout, never reached gameplay (2026-09-25)
+
+Per the reviewer's work order: laya-vision code pinned to
+`404fc4a63208d14b544d5c852f81e88972d267bb` (with `load_vlm(revision=)`),
+model pinned to `thaitea/laya-vision-201m` at
+`0b6228f7a0762566de1c4539e9aa4eb1c1aef5f4`, revision wired through
+`RuntimeConfig.model_revision`, and every report now carries
+`model_provenance` (repo, requested/resolved revision, code SHA, params).
+No gameplay prompts, learning behavior, pulse timing, or bench semantics
+changed. Historical score-5 run attributed (Hub history + local cache) to
+the old `thaitea/laya-vision@d1fbdc06` 237M/no-game checkpoint under code
+`05ba043`; its JSON report is lost, only the numbers survive.
+
+Mirror diagnostic (`probes/2026-09-25-laya/layamirror.py`, production
+`LayaVisionPolicy.decide`, learn=False, H5-H8/A1 frames, XPU): load 5.5s
+cached, resolved==requested, params **201161347**. Distributions DO change
+with pixels (H5 keep .161/down-left .152; H6 neutral .169; A1 down-left
+.214) - no PlayJev-style invariance, deterministic across runs. But the
+required lateral mass stays .05-.08 on all four H states, confidences
+.025-.042, argmax never the required direction. Steady inference
+~140-155ms, first 2.1s.
+
+Full bench (`config/bench-tetris.toml` unchanged except the model pin,
+.200 Arc XPU, 30-min ceiling): **reason=timeout, 1801.8s, gameplay=no,
+score/lines None, 3544 decisions, 3885 polls, cadence 1.97Hz, infer p50
+452ms / p95 464ms, failures 0, decode_gaps 3885.** Forced actions 8/3545
+turns, so early play was model-selected, not harness-driven. The model
+held `UP+LEFT+X+Y` (2201x) and `DOWN+LEFT+X+Y` (1212x); START was tried
+once (sweep, effect menu) and never model-selected; effects read ambient
+3522x. Movement conf p50 .087, buttons p50 .038. The harness worked (0
+failures, inputs flowed, live video); the 201M brain never started a game.
+Caveat: score-5 was likewise a single run of a menu-lottery benchmark, so
+single-run variance cuts both ways; this run establishes the pinned
+baseline, not a model ranking.
+
+## 13. Laya-201M motor test: survives paused, plays nothing (2026-09-25)
+
+The reviewer's narrow follow-up: same pinned 201M/code, `--from-state
+bench0.state` (level 0, empty board, first piece falling), 5-min ceiling,
+nothing else changed. Result: `timeout`, 301.5s, gameplay=yes from 0.51s,
+**score 0, lines 0, level 0**, 579 decisions, 1.92Hz, infer p50 363ms /
+p95 566ms, 0 failures, 7 decode gaps. Forced 14/580 turns.
+
+Only 8 pieces were dealt in 300s (stats sum): the agent pressed START
+twice (pausing/unpausing around its own sweep) and spent the run spamming
+A (269x) and UP+LEFT+A (294x) - rotation without steering or dropping
+(DOWN 2x, no model-selected drops). Effects read ambient 451x; lateral
+motion was never intentionally produced. Survival was trivial (8 pieces
+cannot top out an empty board), progress zero.
+
+Verdict per the reviewer's rule: Laya cannot function as a motor/reflex
+layer for Tetris even when placed in gameplay. Standalone System-1
+benchmarking stops here: Qwen/OpenJev (no action routing), PlayJev
+(no SNES transfer), Laya-201M (no policy, no motor function) are all
+eliminated as solo brains. Next direction under discussion: hierarchical
+cognition (Qwen-class intention generator) over a fast execution policy.
+
+## 14. Qwen3.5-4B native vision: reads text, blind to fine space (2026-09-25)
+
+The reviewer's authorized test: qualify stock Qwen vision with the official
+BF16 model (snapshot `851bf6e8`) + official Qwen3VLProcessor, offline, XPU,
+plain generation (not logits), thinking disabled - no action selection, no
+quantization. 140 questions (134 main + 6 controls) over real emulator
+frames (Tetris/Dr. Mario gameplay, menus, title), every label human-verified
+against zoomed crops, 23 mirrored pairs, blank/shuffled controls.
+Artifacts: `probes/2026-09-25-vision/` (manifest, runner, captures, results).
+
+Result: **79/134 = 59%, gate 90%+ FAILED.** Controls 1/6 (collapse as
+required). The split is the finding: text/menus/selection are strong
+(tsub/dsub 12/12, gsel 7/8, sel 6/6, hiscore 4/4, virus-OCR 4/4, speed 4/4,
+drm-more 4/4), while fine spatial grounding is ABSENT: thirds 8/24 all
+answered CENTER regardless of truth, directions DOWN-leaning prior 6/18,
+pill colors one fixed option 1/6, 17/23 mirror pairs answered identically
+across flips. Stats-OCR errors were row swaps (digits read, rows
+misattributed). 6/6 geo-column answers are VOID (prose cut at 24 tokens,
+never reached a letter - method flaw, excluded from interpretation).
+Resolution is not the cause: the processor patches full-res (288 patches),
+and 2x-upscaled thirds still failed. Latency p50 1.5s / p95 5.1s also
+misses 200ms. One gap: no true higher-res material exists (single SNES
+cart); 2x scale probe substituted.
+
+Verdict per the progressive plan: BF16 fails the gate, so abandon Qwen
+vision FOR SPATIAL/CONTROLLER GROUNDING. It reads dialogue/menus/HUDs and
+could still serve a System-2 reader, but it cannot localize game objects -
+no "east door", no "second enemy", no piece steering. This refines (not
+reverses) the old probe: Qwen vision contributes text/salient-marker
+signal but no fine-spatial signal. Infra note: the XPU UR runtime leaks
+pinned host memory per generate call, so the quiz ran as 18 fresh-process
+chunks of 8; the first single-process attempt yielded 125/140 infra errors
+and was discarded, and one teardown segfaulted.

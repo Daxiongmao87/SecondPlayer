@@ -1,0 +1,140 @@
+{"id": "q001", "cat": "menu-gsel", "ok": false, "got": "B", "exp": "A", "ms": 5896.6, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q002", "cat": "menu-gsel", "ok": true, "got": "A", "exp": "A", "ms": 1298.4, "raw": "A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q003", "cat": "menu-gsel", "ok": true, "got": "A", "exp": "A", "ms": 1294.9, "raw": "A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q004", "cat": "menu-gsel", "ok": true, "got": "B", "exp": "B", "ms": 1243.9, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q005", "cat": "menu-gsel", "ok": true, "got": "B", "exp": "B", "ms": 1320.2, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q006", "cat": "menu-gsel", "ok": true, "got": "B", "exp": "B", "ms": 1262.5, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q007", "cat": "menu-gsel", "ok": true, "got": "C", "exp": "C", "ms": 1305.1, "raw": "C\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q008", "cat": "menu-gsel", "ok": true, "got": "C", "exp": "C", "ms": 1324.2, "raw": "C\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q009", "cat": "menu-tsub", "ok": true, "got": "A", "exp": "A", "ms": 4881.3, "raw": "A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q010", "cat": "menu-tsub", "ok": true, "got": "A", "exp": "A", "ms": 1345.2, "raw": "A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q011", "cat": "menu-tsub", "ok": true, "got": "B", "exp": "B", "ms": 1337.7, "raw": " B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q012", "cat": "menu-tsub", "ok": true, "got": "B", "exp": "B", "ms": 1255.5, "raw": " B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q013", "cat": "menu-tsub", "ok": true, "got": "C", "exp": "C", "ms": 1291.4, "raw": "C\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q014", "cat": "menu-tsub", "ok": true, "got": "C", "exp": "C", "ms": 1260.5, "raw": "C\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q015", "cat": "menu-dsub", "ok": true, "got": "A", "exp": "A", "ms": 1712.2, "raw": "A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q016", "cat": "menu-dsub", "ok": true, "got": "A", "exp": "A", "ms": 1267.2, "raw": "A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q017", "cat": "menu-dsub", "ok": true, "got": "B", "exp": "B", "ms": 4795.9, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q018", "cat": "menu-dsub", "ok": true, "got": "B", "exp": "B", "ms": 1385.9, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q019", "cat": "menu-dsub", "ok": true, "got": "B", "exp": "B", "ms": 1364.8, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q020", "cat": "menu-dsub", "ok": true, "got": "C", "exp": "C", "ms": 1237.2, "raw": "C\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q021", "cat": "menu-music", "ok": true, "got": "A", "exp": "A", "ms": 1660.5, "raw": " A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q022", "cat": "menu-music", "ok": false, "got": "A", "exp": "B", "ms": 1318.2, "raw": " A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q023", "cat": "menu-music", "ok": true, "got": "B", "exp": "B", "ms": 1378.2, "raw": " B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q024", "cat": "menu-music", "ok": false, "got": "B", "exp": "C", "ms": 1245.3, "raw": " B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q025", "cat": "menu-music", "ok": true, "got": "C", "exp": "C", "ms": 4629.1, "raw": " C\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q026", "cat": "menu-music", "ok": false, "got": "A", "exp": "D", "ms": 1373.9, "raw": " A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q027", "cat": "menu-music", "ok": false, "got": "A", "exp": "D", "ms": 1296.8, "raw": " A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q028", "cat": "ocr-virus", "ok": true, "got": "00", "exp": "00", "ms": 2863.7, "raw": "00\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q029", "cat": "ocr-virus", "ok": true, "got": "02", "exp": "02", "ms": 1355.2, "raw": "02\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q030", "cat": "ocr-virus", "ok": true, "got": "04", "exp": "04", "ms": 1431.3, "raw": "04\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q031", "cat": "ocr-virus", "ok": true, "got": "02", "exp": "02", "ms": 1508.3, "raw": "02\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q032", "cat": "menu-speed", "ok": true, "got": "B", "exp": "B", "ms": 2254.2, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q033", "cat": "menu-speed", "ok": true, "got": "B", "exp": "B", "ms": 4671.4, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q034", "cat": "menu-speed", "ok": true, "got": "C", "exp": "C", "ms": 1279.2, "raw": "C\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q035", "cat": "menu-speed", "ok": true, "got": "C", "exp": "C", "ms": 1271.2, "raw": "C\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q036", "cat": "menu-dmusic", "ok": false, "got": "B", "exp": "A", "ms": 2567.3, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q037", "cat": "menu-dmusic", "ok": true, "got": "A", "exp": "A", "ms": 1296.1, "raw": "A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q038", "cat": "menu-dmusic", "ok": true, "got": "B", "exp": "B", "ms": 1221.0, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q039", "cat": "menu-dmusic", "ok": false, "got": "B", "exp": "C", "ms": 1260.3, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q040", "cat": "menu-dmusic", "ok": true, "got": "C", "exp": "C", "ms": 1203.7, "raw": "C\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q041", "cat": "ocr-hiscore", "ok": true, "got": "007500", "exp": "007500", "ms": 7021.6, "raw": "007500\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q042", "cat": "ocr-hiscore", "ok": true, "got": "09", "exp": "09", "ms": 2402.2, "raw": "09\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q043", "cat": "ocr-hiscore", "ok": true, "got": "LANCE", "exp": "LANCE", "ms": 1335.8, "raw": "LANCE\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q044", "cat": "ocr-hiscore", "ok": true, "got": "010000", "exp": "010000", "ms": 2432.3, "raw": "010000\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q045", "cat": "ocr-score", "ok": true, "got": "000000", "exp": "000000", "ms": 4005.7, "raw": "000000\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q046", "cat": "ocr-score", "ok": true, "got": "000003", "exp": "000003", "ms": 2034.8, "raw": "000003\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q047", "cat": "ocr-score", "ok": false, "got": "00068", "exp": "000068", "ms": 1901.1, "raw": "00068\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q048", "cat": "ocr-score", "ok": true, "got": "000099", "exp": "000099", "ms": 2111.6, "raw": "000099\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q049", "cat": "ocr-stats", "ok": false, "got": "002", "exp": "003", "ms": 5646.6, "raw": "002\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q050", "cat": "ocr-stats", "ok": false, "got": "003", "exp": "002", "ms": 3495.4, "raw": "003\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q051", "cat": "ocr-stats", "ok": true, "got": "002", "exp": "002", "ms": 1706.7, "raw": "002\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q052", "cat": "ocr-stats", "ok": true, "got": "001", "exp": "001", "ms": 1706.0, "raw": "001\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q053", "cat": "ocr-drm", "ok": true, "got": "02", "exp": "02", "ms": 2823.7, "raw": "02\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q054", "cat": "ocr-drm", "ok": true, "got": "12", "exp": "12", "ms": 1836.3, "raw": "12\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q055", "cat": "ocr-drm", "ok": false, "got": "04", "exp": "06", "ms": 1440.0, "raw": "04\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q056", "cat": "ocr-drm", "ok": false, "got": "28", "exp": "26", "ms": 1465.2, "raw": "28\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q057", "cat": "ocr-drm", "ok": true, "got": "HI", "exp": "HI", "ms": 4892.6, "raw": " HI\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q058", "cat": "ocr-drm", "ok": true, "got": "MED", "exp": "MED", "ms": 1240.9, "raw": " MED\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q059", "cat": "geo-third", "ok": false, "got": "B", "exp": "A", "ms": 2274.4, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q060", "cat": "geo-third", "ok": false, "got": "B", "exp": "A", "ms": 1355.0, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q061", "cat": "geo-third", "ok": false, "got": "B", "exp": "A", "ms": 1206.4, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q062", "cat": "geo-third", "ok": true, "got": "B", "exp": "B", "ms": 1256.5, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q063", "cat": "geo-third", "ok": true, "got": "B", "exp": "B", "ms": 1233.3, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q064", "cat": "geo-third", "ok": true, "got": "B", "exp": "B", "ms": 1265.8, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q065", "cat": "geo-third", "ok": false, "got": "B", "exp": "C", "ms": 4678.0, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q066", "cat": "geo-third", "ok": false, "got": "B", "exp": "C", "ms": 1223.7, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q067", "cat": "geo-third", "ok": false, "got": "B", "exp": "C", "ms": 1289.9, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q068", "cat": "geo-dir", "ok": true, "got": "A", "exp": "A", "ms": 2746.5, "raw": "A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q069", "cat": "geo-dir", "ok": true, "got": "A", "exp": "A", "ms": 1405.1, "raw": "A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q070", "cat": "geo-dir", "ok": false, "got": "C", "exp": "A", "ms": 1440.1, "raw": "C\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q071", "cat": "geo-dir", "ok": false, "got": "C", "exp": "B", "ms": 1517.5, "raw": "C\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q072", "cat": "geo-dir", "ok": false, "got": "C", "exp": "B", "ms": 1436.6, "raw": "C\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q073", "cat": "geo-dir", "ok": true, "got": "B", "exp": "B", "ms": 4800.7, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q074", "cat": "geo-dir", "ok": false, "got": "A", "exp": "C", "ms": 1383.2, "raw": "A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q075", "cat": "geo-dir", "ok": true, "got": "C", "exp": "C", "ms": 1455.5, "raw": "C\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q076", "cat": "geo-dir", "ok": false, "got": "B", "exp": "C", "ms": 1425.7, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q077", "cat": "geo-col", "ok": true, "got": "A", "exp": "A", "ms": 12577.0, "raw": "Looking at the bottom row of the well (the main play area), we can see:\n\n- A green block in", "pair": null, "control": false, "error": null, "ambiguous": true}
+{"id": "q078", "cat": "geo-col", "ok": false, "got": "A", "exp": "C", "ms": 4475.4, "raw": "Looking at the bottom row of the well (the main play area), we can see blue blocks placed in the lower section", "pair": null, "control": false, "error": null, "ambiguous": true}
+{"id": "q079", "cat": "geo-col", "ok": false, "got": "A", "exp": "B", "ms": 4571.8, "raw": "Looking at the bottom row of the well (the main play area), we can see blocks in columns:\n\n- Column", "pair": null, "control": false, "error": null, "ambiguous": true}
+{"id": "q080", "cat": "geo-side", "ok": true, "got": "A", "exp": "A", "ms": 2443.9, "raw": " A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q081", "cat": "geo-side", "ok": true, "got": "A", "exp": "A", "ms": 4987.3, "raw": " A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q082", "cat": "geo-side", "ok": false, "got": "A", "exp": "B", "ms": 1298.9, "raw": " A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q083", "cat": "geo-side", "ok": false, "got": "A", "exp": "B", "ms": 1322.2, "raw": " A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q084", "cat": "drm-third", "ok": false, "got": "B", "exp": "A", "ms": 2290.0, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q085", "cat": "drm-third", "ok": false, "got": "B", "exp": "A", "ms": 1299.8, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q086", "cat": "drm-third", "ok": true, "got": "B", "exp": "B", "ms": 1396.5, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q087", "cat": "drm-third", "ok": true, "got": "B", "exp": "B", "ms": 1381.5, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q088", "cat": "drm-colors", "ok": false, "got": "B", "exp": "A", "ms": 2438.8, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q089", "cat": "drm-colors", "ok": false, "got": "B", "exp": "A", "ms": 4689.5, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q090", "cat": "drm-colors", "ok": true, "got": "B", "exp": "B", "ms": 1406.2, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q091", "cat": "drm-colors", "ok": false, "got": "B", "exp": "C", "ms": 1295.7, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q092", "cat": "drm-colors", "ok": false, "got": "B", "exp": "C", "ms": 1279.7, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q093", "cat": "drm-colors", "ok": false, "got": "B", "exp": "D", "ms": 1415.7, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q094", "cat": "drm-more", "ok": true, "got": "A", "exp": "A", "ms": 2553.6, "raw": "A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q095", "cat": "drm-more", "ok": true, "got": "A", "exp": "A", "ms": 1448.2, "raw": "A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q096", "cat": "drm-more", "ok": true, "got": "B", "exp": "B", "ms": 1332.3, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q097", "cat": "drm-more", "ok": true, "got": "B", "exp": "B", "ms": 4752.5, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q098", "cat": "drm-count", "ok": false, "got": "B", "exp": "A", "ms": 2631.8, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q099", "cat": "drm-count", "ok": true, "got": "B", "exp": "B", "ms": 1389.5, "raw": " B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q100", "cat": "sel", "ok": true, "got": "A", "exp": "A", "ms": 2466.9, "raw": "A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q101", "cat": "sel", "ok": true, "got": "B", "exp": "B", "ms": 1463.3, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q102", "cat": "sel", "ok": true, "got": "A", "exp": "A", "ms": 1538.5, "raw": "A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q103", "cat": "sel", "ok": true, "got": "B", "exp": "B", "ms": 1482.4, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q104", "cat": "sel", "ok": true, "got": "A", "exp": "A", "ms": 1528.3, "raw": "A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q105", "cat": "sel", "ok": true, "got": "B", "exp": "B", "ms": 4903.3, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q106", "cat": "scale", "ok": true, "got": "B", "exp": "B", "ms": 3919.8, "raw": " B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q107", "cat": "scale", "ok": true, "got": "04", "exp": "04", "ms": 3976.3, "raw": "04\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q108", "cat": "scale", "ok": false, "got": "B", "exp": "C", "ms": 3212.1, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q109", "cat": "scale", "ok": false, "got": "B", "exp": "A", "ms": 2515.9, "raw": "B\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q110", "cat": "scale", "ok": true, "got": "007500", "exp": "007500", "ms": 5591.3, "raw": "007500\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q111", "cat": "scale", "ok": false, "got": "A", "exp": "C", "ms": 3748.1, "raw": "A\n", "pair": null, "control": false, "error": null, "ambiguous": false}
+{"id": "q112", "cat": "geo-third", "ok": false, "got": "B", "exp": "C", "ms": 2579.4, "raw": "B\n", "pair": "q059", "control": false, "error": null, "ambiguous": false}
+{"id": "q113", "cat": "geo-third", "ok": false, "got": "B", "exp": "C", "ms": 4646.1, "raw": "B\n", "pair": "q060", "control": false, "error": null, "ambiguous": false}
+{"id": "q114", "cat": "geo-third", "ok": false, "got": "B", "exp": "C", "ms": 1241.4, "raw": "B\n", "pair": "q061", "control": false, "error": null, "ambiguous": false}
+{"id": "q115", "cat": "geo-third", "ok": true, "got": "B", "exp": "B", "ms": 1245.0, "raw": "B\n", "pair": "q062", "control": false, "error": null, "ambiguous": false}
+{"id": "q116", "cat": "geo-third", "ok": true, "got": "B", "exp": "B", "ms": 1312.1, "raw": "B\n", "pair": "q063", "control": false, "error": null, "ambiguous": false}
+{"id": "q117", "cat": "geo-third", "ok": true, "got": "B", "exp": "B", "ms": 1265.8, "raw": "B\n", "pair": "q064", "control": false, "error": null, "ambiguous": false}
+{"id": "q118", "cat": "geo-third", "ok": false, "got": "B", "exp": "A", "ms": 1441.5, "raw": "B\n", "pair": "q065", "control": false, "error": null, "ambiguous": false}
+{"id": "q119", "cat": "geo-third", "ok": false, "got": "B", "exp": "A", "ms": 1557.4, "raw": "B\n", "pair": "q066", "control": false, "error": null, "ambiguous": false}
+{"id": "q120", "cat": "geo-third", "ok": false, "got": "B", "exp": "A", "ms": 1380.7, "raw": "B\n", "pair": "q067", "control": false, "error": null, "ambiguous": false}
+{"id": "q121", "cat": "geo-dir", "ok": false, "got": "C", "exp": "B", "ms": 4857.7, "raw": "C\n", "pair": "q068", "control": false, "error": null, "ambiguous": false}
+{"id": "q122", "cat": "geo-dir", "ok": false, "got": "C", "exp": "B", "ms": 1466.9, "raw": "C\n", "pair": "q069", "control": false, "error": null, "ambiguous": false}
+{"id": "q123", "cat": "geo-dir", "ok": false, "got": "C", "exp": "B", "ms": 1425.5, "raw": "C\n", "pair": "q070", "control": false, "error": null, "ambiguous": false}
+{"id": "q124", "cat": "geo-dir", "ok": false, "got": "B", "exp": "A", "ms": 1474.5, "raw": "B\n", "pair": "q071", "control": false, "error": null, "ambiguous": false}
+{"id": "q125", "cat": "geo-dir", "ok": false, "got": "C", "exp": "A", "ms": 1435.8, "raw": "C\n", "pair": "q072", "control": false, "error": null, "ambiguous": false}
+{"id": "q126", "cat": "geo-dir", "ok": false, "got": "C", "exp": "A", "ms": 1476.6, "raw": "C\n", "pair": "q073", "control": false, "error": null, "ambiguous": false}
+{"id": "q127", "cat": "geo-dir", "ok": false, "got": "B", "exp": "C", "ms": 1391.5, "raw": "B\n", "pair": "q074", "control": false, "error": null, "ambiguous": false}
+{"id": "q128", "cat": "geo-dir", "ok": true, "got": "C", "exp": "C", "ms": 1488.1, "raw": "C\n", "pair": "q075", "control": false, "error": null, "ambiguous": false}
+{"id": "q129", "cat": "geo-dir", "ok": true, "got": "C", "exp": "C", "ms": 5102.2, "raw": "C\n", "pair": "q076", "control": false, "error": null, "ambiguous": false}
+{"id": "q130", "cat": "geo-col", "ok": true, "got": "A", "exp": "A", "ms": 12537.5, "raw": "Looking at the bottom row of the well (the main play area), we can see:\n\n- A blue block in", "pair": "q077", "control": false, "error": null, "ambiguous": true}
+{"id": "q131", "cat": "geo-col", "ok": false, "got": "A", "exp": "C", "ms": 4410.6, "raw": "Looking at the bottom row of the well (the main maze area), we can see two blue blocks placed in the bottom", "pair": "q078", "control": false, "error": null, "ambiguous": true}
+{"id": "q132", "cat": "geo-col", "ok": false, "got": "A", "exp": "B", "ms": 4402.8, "raw": "Looking at the bottom row of the well in the image:\n\n- Column 0: empty\n- Column 1", "pair": "q079", "control": false, "error": null, "ambiguous": true}
+{"id": "q133", "cat": "drm-third", "ok": false, "got": "B", "exp": "C", "ms": 2445.7, "raw": "B\n", "pair": "q084", "control": false, "error": null, "ambiguous": false}
+{"id": "q134", "cat": "drm-third", "ok": false, "got": "B", "exp": "C", "ms": 1429.7, "raw": "B\n", "pair": "q085", "control": false, "error": null, "ambiguous": false}
+{"id": "q135", "cat": "control", "ok": true, "got": "A", "exp": "A", "ms": 1465.3, "raw": "A\n", "pair": null, "control": true, "error": null, "ambiguous": false}
+{"id": "q136", "cat": "control", "ok": false, "got": "A", "exp": "B", "ms": 1649.1, "raw": "A\n", "pair": null, "control": true, "error": null, "ambiguous": false}
+{"id": "q137", "cat": "control", "ok": false, "got": "A", "exp": "B", "ms": 4915.8, "raw": "A\n", "pair": null, "control": true, "error": null, "ambiguous": false}
+{"id": "q138", "cat": "control", "ok": false, "got": "A", "exp": "B", "ms": 1510.2, "raw": "A\n", "pair": null, "control": true, "error": null, "ambiguous": false}
+{"id": "q139", "cat": "control", "ok": false, "got": "47", "exp": "04", "ms": 3030.5, "raw": "47\n", "pair": null, "control": true, "error": null, "ambiguous": false}
+{"id": "q140", "cat": "control", "ok": false, "got": "B", "exp": "C", "ms": 2458.3, "raw": " B\n", "pair": null, "control": true, "error": null, "ambiguous": false}

@@ -1,0 +1,476 @@
+--- chunk off=0 try=1 (jsonl=0)
+snapshots: ['851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a']
+processor: Qwen3VLProcessor
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights:  47%|████▋     | 340/723 [00:00<00:00, 3395.95it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 3973.93it/s]
+loaded BF16 on xpu in 11.3s
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+/home/agent/projects/secondplayer/.venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py:395: UserWarning: Aten Op fallback from XPU to CPU happends. This may have performance implications. If need debug the fallback ops please set environment variable `PYTORCH_DEBUG_XPU_FALLBACK=1`  (Triggered internally at /pytorch/build/xpu/ATen/RegisterXPU_0.cpp:54525.)
+  new_values = torch.linalg.solve_triangular(ut_system, v_beta, upper=False, unitriangular=True)
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+q001 FAIL menu-gsel exp=A got=B 5897ms :: 'B\n'
+q002 PASS menu-gsel exp=A got=A 1298ms :: 'A\n'
+q003 PASS menu-gsel exp=A got=A 1295ms :: 'A\n'
+q004 PASS menu-gsel exp=B got=B 1244ms :: 'B\n'
+q005 PASS menu-gsel exp=B got=B 1320ms :: 'B\n'
+q006 PASS menu-gsel exp=B got=B 1263ms :: 'B\n'
+q007 PASS menu-gsel exp=C got=C 1305ms :: 'C\n'
+q008 PASS menu-gsel exp=C got=C 1324ms :: 'C\n'
+== main 7/8 control 0/0 errors 0 ==
+   menu-gsel: 7/8
+   latency ms: p50=1305 p95=5897 max=5897
+   mirror pairs both-correct: 0/0
+--- chunk off=8 try=1 (jsonl=8)
+snapshots: ['851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a']
+processor: Qwen3VLProcessor
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights:  57%|█████▋    | 409/723 [00:00<00:00, 4007.42it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 4560.94it/s]
+loaded BF16 on xpu in 4.7s
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+/home/agent/projects/secondplayer/.venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py:395: UserWarning: Aten Op fallback from XPU to CPU happends. This may have performance implications. If need debug the fallback ops please set environment variable `PYTORCH_DEBUG_XPU_FALLBACK=1`  (Triggered internally at /pytorch/build/xpu/ATen/RegisterXPU_0.cpp:54525.)
+  new_values = torch.linalg.solve_triangular(ut_system, v_beta, upper=False, unitriangular=True)
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+q009 PASS menu-tsub exp=A got=A 4881ms :: 'A\n'
+q010 PASS menu-tsub exp=A got=A 1345ms :: 'A\n'
+q011 PASS menu-tsub exp=B got=B 1338ms :: ' B\n'
+q012 PASS menu-tsub exp=B got=B 1256ms :: ' B\n'
+q013 PASS menu-tsub exp=C got=C 1291ms :: 'C\n'
+q014 PASS menu-tsub exp=C got=C 1260ms :: 'C\n'
+q015 PASS menu-dsub exp=A got=A 1712ms :: 'A\n'
+q016 PASS menu-dsub exp=A got=A 1267ms :: 'A\n'
+== main 8/8 control 0/0 errors 0 ==
+   menu-dsub: 2/2
+   menu-tsub: 6/6
+   latency ms: p50=1338 p95=4881 max=4881
+   mirror pairs both-correct: 0/0
+--- chunk off=16 try=1 (jsonl=16)
+snapshots: ['851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a']
+processor: Qwen3VLProcessor
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 16245.06it/s]
+loaded BF16 on xpu in 4.4s
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+/home/agent/projects/secondplayer/.venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py:395: UserWarning: Aten Op fallback from XPU to CPU happends. This may have performance implications. If need debug the fallback ops please set environment variable `PYTORCH_DEBUG_XPU_FALLBACK=1`  (Triggered internally at /pytorch/build/xpu/ATen/RegisterXPU_0.cpp:54525.)
+  new_values = torch.linalg.solve_triangular(ut_system, v_beta, upper=False, unitriangular=True)
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+q017 PASS menu-dsub exp=B got=B 4796ms :: 'B\n'
+q018 PASS menu-dsub exp=B got=B 1386ms :: 'B\n'
+q019 PASS menu-dsub exp=B got=B 1365ms :: 'B\n'
+q020 PASS menu-dsub exp=C got=C 1237ms :: 'C\n'
+q021 PASS menu-music exp=A got=A 1661ms :: ' A\n'
+q022 FAIL menu-music exp=B got=A 1318ms :: ' A\n'
+q023 PASS menu-music exp=B got=B 1378ms :: ' B\n'
+q024 FAIL menu-music exp=C got=B 1245ms :: ' B\n'
+== main 6/8 control 0/0 errors 0 ==
+   menu-dsub: 4/4
+   menu-music: 2/4
+   latency ms: p50=1378 p95=4796 max=4796
+   mirror pairs both-correct: 0/0
+--- chunk off=24 try=1 (jsonl=24)
+snapshots: ['851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a']
+processor: Qwen3VLProcessor
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 14394.19it/s]
+loaded BF16 on xpu in 4.4s
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+/home/agent/projects/secondplayer/.venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py:395: UserWarning: Aten Op fallback from XPU to CPU happends. This may have performance implications. If need debug the fallback ops please set environment variable `PYTORCH_DEBUG_XPU_FALLBACK=1`  (Triggered internally at /pytorch/build/xpu/ATen/RegisterXPU_0.cpp:54525.)
+  new_values = torch.linalg.solve_triangular(ut_system, v_beta, upper=False, unitriangular=True)
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+q025 PASS menu-music exp=C got=C 4629ms :: ' C\n'
+q026 FAIL menu-music exp=D got=A 1374ms :: ' A\n'
+q027 FAIL menu-music exp=D got=A 1297ms :: ' A\n'
+q028 PASS ocr-virus exp=00 got=00 2864ms :: '00\n'
+q029 PASS ocr-virus exp=02 got=02 1355ms :: '02\n'
+q030 PASS ocr-virus exp=04 got=04 1431ms :: '04\n'
+q031 PASS ocr-virus exp=02 got=02 1508ms :: '02\n'
+q032 PASS menu-speed exp=B got=B 2254ms :: 'B\n'
+== main 6/8 control 0/0 errors 0 ==
+   menu-music: 1/3
+   menu-speed: 1/1
+   ocr-virus: 4/4
+   latency ms: p50=1508 p95=4629 max=4629
+   mirror pairs both-correct: 0/0
+--- chunk off=32 try=1 (jsonl=32)
+snapshots: ['851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a']
+processor: Qwen3VLProcessor
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 18767.45it/s]
+loaded BF16 on xpu in 4.5s
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+/home/agent/projects/secondplayer/.venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py:395: UserWarning: Aten Op fallback from XPU to CPU happends. This may have performance implications. If need debug the fallback ops please set environment variable `PYTORCH_DEBUG_XPU_FALLBACK=1`  (Triggered internally at /pytorch/build/xpu/ATen/RegisterXPU_0.cpp:54525.)
+  new_values = torch.linalg.solve_triangular(ut_system, v_beta, upper=False, unitriangular=True)
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+q033 PASS menu-speed exp=B got=B 4671ms :: 'B\n'
+q034 PASS menu-speed exp=C got=C 1279ms :: 'C\n'
+q035 PASS menu-speed exp=C got=C 1271ms :: 'C\n'
+q036 FAIL menu-dmusic exp=A got=B 2567ms :: 'B\n'
+q037 PASS menu-dmusic exp=A got=A 1296ms :: 'A\n'
+q038 PASS menu-dmusic exp=B got=B 1221ms :: 'B\n'
+q039 FAIL menu-dmusic exp=C got=B 1260ms :: 'B\n'
+q040 PASS menu-dmusic exp=C got=C 1204ms :: 'C\n'
+== main 6/8 control 0/0 errors 0 ==
+   menu-dmusic: 3/5
+   menu-speed: 3/3
+   latency ms: p50=1279 p95=4671 max=4671
+   mirror pairs both-correct: 0/0
+--- chunk off=40 try=1 (jsonl=40)
+snapshots: ['851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a']
+processor: Qwen3VLProcessor
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 15234.93it/s]
+loaded BF16 on xpu in 4.8s
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+/home/agent/projects/secondplayer/.venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py:395: UserWarning: Aten Op fallback from XPU to CPU happends. This may have performance implications. If need debug the fallback ops please set environment variable `PYTORCH_DEBUG_XPU_FALLBACK=1`  (Triggered internally at /pytorch/build/xpu/ATen/RegisterXPU_0.cpp:54525.)
+  new_values = torch.linalg.solve_triangular(ut_system, v_beta, upper=False, unitriangular=True)
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+q041 PASS ocr-hiscore exp=007500 got=007500 7022ms :: '007500\n'
+q042 PASS ocr-hiscore exp=09 got=09 2402ms :: '09\n'
+q043 PASS ocr-hiscore exp=LANCE got=LANCE 1336ms :: 'LANCE\n'
+q044 PASS ocr-hiscore exp=010000 got=010000 2432ms :: '010000\n'
+q045 PASS ocr-score exp=000000 got=000000 4006ms :: '000000\n'
+q046 PASS ocr-score exp=000003 got=000003 2035ms :: '000003\n'
+q047 FAIL ocr-score exp=000068 got=00068 1901ms :: '00068\n'
+q048 PASS ocr-score exp=000099 got=000099 2112ms :: '000099\n'
+== main 7/8 control 0/0 errors 0 ==
+   ocr-hiscore: 4/4
+   ocr-score: 3/4
+   latency ms: p50=2402 p95=7022 max=7022
+   mirror pairs both-correct: 0/0
+--- chunk off=48 try=1 (jsonl=48)
+snapshots: ['851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a']
+processor: Qwen3VLProcessor
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 16493.52it/s]
+loaded BF16 on xpu in 4.7s
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+/home/agent/projects/secondplayer/.venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py:395: UserWarning: Aten Op fallback from XPU to CPU happends. This may have performance implications. If need debug the fallback ops please set environment variable `PYTORCH_DEBUG_XPU_FALLBACK=1`  (Triggered internally at /pytorch/build/xpu/ATen/RegisterXPU_0.cpp:54525.)
+  new_values = torch.linalg.solve_triangular(ut_system, v_beta, upper=False, unitriangular=True)
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+q049 FAIL ocr-stats exp=003 got=002 5647ms :: '002\n'
+q050 FAIL ocr-stats exp=002 got=003 3495ms :: '003\n'
+q051 PASS ocr-stats exp=002 got=002 1707ms :: '002\n'
+q052 PASS ocr-stats exp=001 got=001 1706ms :: '001\n'
+q053 PASS ocr-drm exp=02 got=02 2824ms :: '02\n'
+q054 PASS ocr-drm exp=12 got=12 1836ms :: '12\n'
+q055 FAIL ocr-drm exp=06 got=04 1440ms :: '04\n'
+q056 FAIL ocr-drm exp=26 got=28 1465ms :: '28\n'
+== main 4/8 control 0/0 errors 0 ==
+   ocr-drm: 2/4
+   ocr-stats: 2/4
+   latency ms: p50=1836 p95=5647 max=5647
+   mirror pairs both-correct: 0/0
+--- chunk off=56 try=1 (jsonl=56)
+snapshots: ['851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a']
+processor: Qwen3VLProcessor
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 17484.63it/s]
+loaded BF16 on xpu in 4.5s
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+/home/agent/projects/secondplayer/.venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py:395: UserWarning: Aten Op fallback from XPU to CPU happends. This may have performance implications. If need debug the fallback ops please set environment variable `PYTORCH_DEBUG_XPU_FALLBACK=1`  (Triggered internally at /pytorch/build/xpu/ATen/RegisterXPU_0.cpp:54525.)
+  new_values = torch.linalg.solve_triangular(ut_system, v_beta, upper=False, unitriangular=True)
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+q057 PASS ocr-drm exp=HI got=HI 4588ms :: ' HI\n'
+q058 PASS ocr-drm exp=MED got=MED 1234ms :: ' MED\n'
+q059 FAIL geo-third exp=A got=B 2255ms :: 'B\n'
+q060 FAIL geo-third exp=A got=B 1300ms :: 'B\n'
+q061 FAIL geo-third exp=A got=B 1259ms :: 'B\n'
+q062 PASS geo-third exp=B got=B 1184ms :: 'B\n'
+q063 ERROR geo-third exp=B got= -1ms :: 'ERROR Native API failed. Native API returns: 38 (UR_RESULT_ERROR_OUT_OF_HOST_MEM'
+infra error; aborting chunk for fresh retry
+chunk off=56 try=1 FAILED; truncated to 56
+--- chunk off=56 try=2 (jsonl=56)
+snapshots: ['851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a']
+processor: Qwen3VLProcessor
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 12956.78it/s]
+loaded BF16 on xpu in 6.1s
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+/home/agent/projects/secondplayer/.venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py:395: UserWarning: Aten Op fallback from XPU to CPU happends. This may have performance implications. If need debug the fallback ops please set environment variable `PYTORCH_DEBUG_XPU_FALLBACK=1`  (Triggered internally at /pytorch/build/xpu/ATen/RegisterXPU_0.cpp:54525.)
+  new_values = torch.linalg.solve_triangular(ut_system, v_beta, upper=False, unitriangular=True)
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+q057 PASS ocr-drm exp=HI got=HI 4893ms :: ' HI\n'
+q058 PASS ocr-drm exp=MED got=MED 1241ms :: ' MED\n'
+q059 FAIL geo-third exp=A got=B 2274ms :: 'B\n'
+q060 FAIL geo-third exp=A got=B 1355ms :: 'B\n'
+q061 FAIL geo-third exp=A got=B 1206ms :: 'B\n'
+q062 PASS geo-third exp=B got=B 1257ms :: 'B\n'
+q063 PASS geo-third exp=B got=B 1233ms :: 'B\n'
+q064 PASS geo-third exp=B got=B 1266ms :: 'B\n'
+== main 5/8 control 0/0 errors 0 ==
+   geo-third: 3/6
+   ocr-drm: 2/2
+   latency ms: p50=1266 p95=4893 max=4893
+   mirror pairs both-correct: 0/0
+--- chunk off=64 try=1 (jsonl=64)
+snapshots: ['851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a']
+processor: Qwen3VLProcessor
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 16672.06it/s]
+loaded BF16 on xpu in 6.4s
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+/home/agent/projects/secondplayer/.venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py:395: UserWarning: Aten Op fallback from XPU to CPU happends. This may have performance implications. If need debug the fallback ops please set environment variable `PYTORCH_DEBUG_XPU_FALLBACK=1`  (Triggered internally at /pytorch/build/xpu/ATen/RegisterXPU_0.cpp:54525.)
+  new_values = torch.linalg.solve_triangular(ut_system, v_beta, upper=False, unitriangular=True)
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+q065 FAIL geo-third exp=C got=B 4678ms :: 'B\n'
+q066 FAIL geo-third exp=C got=B 1224ms :: 'B\n'
+q067 FAIL geo-third exp=C got=B 1290ms :: 'B\n'
+q068 PASS geo-dir exp=A got=A 2747ms :: 'A\n'
+q069 PASS geo-dir exp=A got=A 1405ms :: 'A\n'
+q070 FAIL geo-dir exp=A got=C 1440ms :: 'C\n'
+q071 FAIL geo-dir exp=B got=C 1518ms :: 'C\n'
+q072 FAIL geo-dir exp=B got=C 1437ms :: 'C\n'
+== main 2/8 control 0/0 errors 0 ==
+   geo-dir: 2/5
+   geo-third: 0/3
+   latency ms: p50=1440 p95=4678 max=4678
+   mirror pairs both-correct: 0/0
+--- chunk off=72 try=1 (jsonl=72)
+snapshots: ['851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a']
+processor: Qwen3VLProcessor
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 18086.55it/s]
+loaded BF16 on xpu in 5.2s
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+/home/agent/projects/secondplayer/.venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py:395: UserWarning: Aten Op fallback from XPU to CPU happends. This may have performance implications. If need debug the fallback ops please set environment variable `PYTORCH_DEBUG_XPU_FALLBACK=1`  (Triggered internally at /pytorch/build/xpu/ATen/RegisterXPU_0.cpp:54525.)
+  new_values = torch.linalg.solve_triangular(ut_system, v_beta, upper=False, unitriangular=True)
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+q073 PASS geo-dir exp=B got=B 4801ms :: 'B\n'
+q074 FAIL geo-dir exp=C got=A 1383ms :: 'A\n'
+q075 PASS geo-dir exp=C got=C 1456ms :: 'C\n'
+q076 FAIL geo-dir exp=C got=B 1426ms :: 'B\n'
+q077 PASS geo-col exp=A got=A 12577ms :: 'Looking at the bottom row of the well (the main play area), we can see:\n\n- A gre'
+q078 FAIL geo-col exp=C got=A 4475ms :: 'Looking at the bottom row of the well (the main play area), we can see blue bloc'
+q079 FAIL geo-col exp=B got=A 4572ms :: 'Looking at the bottom row of the well (the main play area), we can see blocks in'
+q080 PASS geo-side exp=A got=A 2444ms :: ' A\n'
+== main 4/8 control 0/0 errors 0 ==
+   geo-col: 1/3
+   geo-dir: 2/4
+   geo-side: 1/1
+   latency ms: p50=4475 p95=12577 max=12577
+   mirror pairs both-correct: 0/0
+--- chunk off=80 try=1 (jsonl=80)
+snapshots: ['851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a']
+processor: Qwen3VLProcessor
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 21044.43it/s]
+loaded BF16 on xpu in 5.0s
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+/home/agent/projects/secondplayer/.venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py:395: UserWarning: Aten Op fallback from XPU to CPU happends. This may have performance implications. If need debug the fallback ops please set environment variable `PYTORCH_DEBUG_XPU_FALLBACK=1`  (Triggered internally at /pytorch/build/xpu/ATen/RegisterXPU_0.cpp:54525.)
+  new_values = torch.linalg.solve_triangular(ut_system, v_beta, upper=False, unitriangular=True)
+q081 ERROR geo-side exp=A got= -1ms :: 'ERROR Native API failed. Native API returns: 38 (UR_RESULT_ERROR_OUT_OF_HOST_MEM'
+infra error; aborting chunk for fresh retry
+chunk off=80 try=1 FAILED; truncated to 80
+--- chunk off=80 try=2 (jsonl=80)
+snapshots: ['851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a']
+processor: Qwen3VLProcessor
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 16630.74it/s]
+loaded BF16 on xpu in 6.7s
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+/home/agent/projects/secondplayer/.venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py:395: UserWarning: Aten Op fallback from XPU to CPU happends. This may have performance implications. If need debug the fallback ops please set environment variable `PYTORCH_DEBUG_XPU_FALLBACK=1`  (Triggered internally at /pytorch/build/xpu/ATen/RegisterXPU_0.cpp:54525.)
+  new_values = torch.linalg.solve_triangular(ut_system, v_beta, upper=False, unitriangular=True)
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+q081 PASS geo-side exp=A got=A 4987ms :: ' A\n'
+q082 FAIL geo-side exp=B got=A 1299ms :: ' A\n'
+q083 FAIL geo-side exp=B got=A 1322ms :: ' A\n'
+q084 FAIL drm-third exp=A got=B 2290ms :: 'B\n'
+q085 FAIL drm-third exp=A got=B 1300ms :: 'B\n'
+q086 PASS drm-third exp=B got=B 1396ms :: 'B\n'
+q087 PASS drm-third exp=B got=B 1382ms :: 'B\n'
+q088 FAIL drm-colors exp=A got=B 2439ms :: 'B\n'
+== main 3/8 control 0/0 errors 0 ==
+   drm-colors: 0/1
+   drm-third: 2/4
+   geo-side: 1/3
+   latency ms: p50=1396 p95=4987 max=4987
+   mirror pairs both-correct: 0/0
+--- chunk off=88 try=1 (jsonl=88)
+snapshots: ['851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a']
+processor: Qwen3VLProcessor
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 17235.30it/s]
+loaded BF16 on xpu in 6.5s
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+/home/agent/projects/secondplayer/.venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py:395: UserWarning: Aten Op fallback from XPU to CPU happends. This may have performance implications. If need debug the fallback ops please set environment variable `PYTORCH_DEBUG_XPU_FALLBACK=1`  (Triggered internally at /pytorch/build/xpu/ATen/RegisterXPU_0.cpp:54525.)
+  new_values = torch.linalg.solve_triangular(ut_system, v_beta, upper=False, unitriangular=True)
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+q089 FAIL drm-colors exp=A got=B 4689ms :: 'B\n'
+q090 PASS drm-colors exp=B got=B 1406ms :: 'B\n'
+q091 FAIL drm-colors exp=C got=B 1296ms :: 'B\n'
+q092 FAIL drm-colors exp=C got=B 1280ms :: 'B\n'
+q093 FAIL drm-colors exp=D got=B 1416ms :: 'B\n'
+q094 PASS drm-more exp=A got=A 2554ms :: 'A\n'
+q095 PASS drm-more exp=A got=A 1448ms :: 'A\n'
+q096 PASS drm-more exp=B got=B 1332ms :: 'B\n'
+== main 4/8 control 0/0 errors 0 ==
+   drm-colors: 1/5
+   drm-more: 3/3
+   latency ms: p50=1416 p95=4690 max=4690
+   mirror pairs both-correct: 0/0
+--- chunk off=96 try=1 (jsonl=96)
+snapshots: ['851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a']
+processor: Qwen3VLProcessor
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 16848.24it/s]
+loaded BF16 on xpu in 4.8s
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+/home/agent/projects/secondplayer/.venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py:395: UserWarning: Aten Op fallback from XPU to CPU happends. This may have performance implications. If need debug the fallback ops please set environment variable `PYTORCH_DEBUG_XPU_FALLBACK=1`  (Triggered internally at /pytorch/build/xpu/ATen/RegisterXPU_0.cpp:54525.)
+  new_values = torch.linalg.solve_triangular(ut_system, v_beta, upper=False, unitriangular=True)
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+q097 PASS drm-more exp=B got=B 4753ms :: 'B\n'
+q098 FAIL drm-count exp=A got=B 2632ms :: 'B\n'
+q099 PASS drm-count exp=B got=B 1389ms :: ' B\n'
+q100 PASS sel exp=A got=A 2467ms :: 'A\n'
+q101 PASS sel exp=B got=B 1463ms :: 'B\n'
+q102 PASS sel exp=A got=A 1538ms :: 'A\n'
+q103 PASS sel exp=B got=B 1482ms :: 'B\n'
+q104 PASS sel exp=A got=A 1528ms :: 'A\n'
+== main 7/8 control 0/0 errors 0 ==
+   drm-count: 1/2
+   drm-more: 1/1
+   sel: 5/5
+   latency ms: p50=1538 p95=4752 max=4752
+   mirror pairs both-correct: 0/0
+--- chunk off=104 try=1 (jsonl=104)
+snapshots: ['851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a']
+processor: Qwen3VLProcessor
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 18669.58it/s]
+loaded BF16 on xpu in 4.7s
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+/home/agent/projects/secondplayer/.venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py:395: UserWarning: Aten Op fallback from XPU to CPU happends. This may have performance implications. If need debug the fallback ops please set environment variable `PYTORCH_DEBUG_XPU_FALLBACK=1`  (Triggered internally at /pytorch/build/xpu/ATen/RegisterXPU_0.cpp:54525.)
+  new_values = torch.linalg.solve_triangular(ut_system, v_beta, upper=False, unitriangular=True)
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+q105 PASS sel exp=B got=B 4903ms :: 'B\n'
+q106 PASS scale exp=B got=B 3920ms :: ' B\n'
+q107 PASS scale exp=04 got=04 3976ms :: '04\n'
+q108 FAIL scale exp=C got=B 3212ms :: 'B\n'
+q109 FAIL scale exp=A got=B 2516ms :: 'B\n'
+q110 PASS scale exp=007500 got=007500 5591ms :: '007500\n'
+q111 FAIL scale exp=C got=A 3748ms :: 'A\n'
+q112 FAIL geo-third exp=C got=B 2579ms :: 'B\n'
+== main 4/8 control 0/0 errors 0 ==
+   geo-third: 0/1
+   scale: 3/6
+   sel: 1/1
+   latency ms: p50=3920 p95=5591 max=5591
+   mirror pairs both-correct: 0/1
+--- chunk off=112 try=1 (jsonl=112)
+snapshots: ['851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a']
+processor: Qwen3VLProcessor
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights:  69%|██████▉   | 501/723 [00:00<00:00, 4930.01it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 5850.71it/s]
+loaded BF16 on xpu in 4.7s
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+/home/agent/projects/secondplayer/.venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py:395: UserWarning: Aten Op fallback from XPU to CPU happends. This may have performance implications. If need debug the fallback ops please set environment variable `PYTORCH_DEBUG_XPU_FALLBACK=1`  (Triggered internally at /pytorch/build/xpu/ATen/RegisterXPU_0.cpp:54525.)
+  new_values = torch.linalg.solve_triangular(ut_system, v_beta, upper=False, unitriangular=True)
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+q113 FAIL geo-third exp=C got=B 4646ms :: 'B\n'
+q114 FAIL geo-third exp=C got=B 1241ms :: 'B\n'
+q115 PASS geo-third exp=B got=B 1245ms :: 'B\n'
+q116 PASS geo-third exp=B got=B 1312ms :: 'B\n'
+q117 PASS geo-third exp=B got=B 1266ms :: 'B\n'
+q118 FAIL geo-third exp=A got=B 1442ms :: 'B\n'
+q119 FAIL geo-third exp=A got=B 1557ms :: 'B\n'
+q120 FAIL geo-third exp=A got=B 1381ms :: 'B\n'
+== main 3/8 control 0/0 errors 0 ==
+   geo-third: 3/8
+   latency ms: p50=1381 p95=4646 max=4646
+   mirror pairs both-correct: 0/8
+--- chunk off=120 try=1 (jsonl=120)
+snapshots: ['851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a']
+processor: Qwen3VLProcessor
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 10443.26it/s]
+loaded BF16 on xpu in 4.7s
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+/home/agent/projects/secondplayer/.venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py:395: UserWarning: Aten Op fallback from XPU to CPU happends. This may have performance implications. If need debug the fallback ops please set environment variable `PYTORCH_DEBUG_XPU_FALLBACK=1`  (Triggered internally at /pytorch/build/xpu/ATen/RegisterXPU_0.cpp:54525.)
+  new_values = torch.linalg.solve_triangular(ut_system, v_beta, upper=False, unitriangular=True)
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+q121 FAIL geo-dir exp=B got=C 4858ms :: 'C\n'
+q122 FAIL geo-dir exp=B got=C 1467ms :: 'C\n'
+q123 FAIL geo-dir exp=B got=C 1425ms :: 'C\n'
+q124 FAIL geo-dir exp=A got=B 1474ms :: 'B\n'
+q125 FAIL geo-dir exp=A got=C 1436ms :: 'C\n'
+q126 FAIL geo-dir exp=A got=C 1477ms :: 'C\n'
+q127 FAIL geo-dir exp=C got=B 1391ms :: 'B\n'
+q128 PASS geo-dir exp=C got=C 1488ms :: 'C\n'
+== main 1/8 control 0/0 errors 0 ==
+   geo-dir: 1/8
+   latency ms: p50=1474 p95=4858 max=4858
+   mirror pairs both-correct: 0/8
+--- chunk off=128 try=1 (jsonl=128)
+snapshots: ['851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a']
+processor: Qwen3VLProcessor
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 19932.05it/s]
+loaded BF16 on xpu in 5.1s
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+/home/agent/projects/secondplayer/.venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py:395: UserWarning: Aten Op fallback from XPU to CPU happends. This may have performance implications. If need debug the fallback ops please set environment variable `PYTORCH_DEBUG_XPU_FALLBACK=1`  (Triggered internally at /pytorch/build/xpu/ATen/RegisterXPU_0.cpp:54525.)
+  new_values = torch.linalg.solve_triangular(ut_system, v_beta, upper=False, unitriangular=True)
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+q129 PASS geo-dir exp=C got=C 4942ms :: 'C\n'
+q130 ERROR geo-col exp=A got= -1ms :: 'ERROR Native API failed. Native API returns: 38 (UR_RESULT_ERROR_OUT_OF_HOST_MEM'
+infra error; aborting chunk for fresh retry
+chunk off=128 try=1 FAILED; truncated to 128
+--- chunk off=128 try=2 (jsonl=128)
+snapshots: ['851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a']
+processor: Qwen3VLProcessor
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 14385.79it/s]
+loaded BF16 on xpu in 6.2s
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+/home/agent/projects/secondplayer/.venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py:395: UserWarning: Aten Op fallback from XPU to CPU happends. This may have performance implications. If need debug the fallback ops please set environment variable `PYTORCH_DEBUG_XPU_FALLBACK=1`  (Triggered internally at /pytorch/build/xpu/ATen/RegisterXPU_0.cpp:54525.)
+  new_values = torch.linalg.solve_triangular(ut_system, v_beta, upper=False, unitriangular=True)
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+q129 PASS geo-dir exp=C got=C 5102ms :: 'C\n'
+q130 PASS geo-col exp=A got=A 12537ms :: 'Looking at the bottom row of the well (the main play area), we can see:\n\n- A blu'
+q131 FAIL geo-col exp=C got=A 4411ms :: 'Looking at the bottom row of the well (the main maze area), we can see two blue '
+q132 FAIL geo-col exp=B got=A 4403ms :: 'Looking at the bottom row of the well in the image:\n\n- Column 0: empty\n- Column '
+q133 FAIL drm-third exp=C got=B 2446ms :: 'B\n'
+q134 FAIL drm-third exp=C got=B 1430ms :: 'B\n'
+q135 PASS control exp=A got=A 1465ms :: 'A\n'
+q136 FAIL control exp=B got=A 1649ms :: 'A\n'
+== main 2/6 control 1/2 errors 0 ==
+   drm-third: 0/2
+   geo-col: 1/3
+   geo-dir: 1/1
+   latency ms: p50=4411 p95=12538 max=12538
+   mirror pairs both-correct: 0/6
+--- chunk off=136 try=1 (jsonl=136)
+snapshots: ['851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a']
+processor: Qwen3VLProcessor
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 15465.22it/s]
+loaded BF16 on xpu in 5.5s
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+/home/agent/projects/secondplayer/.venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py:395: UserWarning: Aten Op fallback from XPU to CPU happends. This may have performance implications. If need debug the fallback ops please set environment variable `PYTORCH_DEBUG_XPU_FALLBACK=1`  (Triggered internally at /pytorch/build/xpu/ATen/RegisterXPU_0.cpp:54525.)
+  new_values = torch.linalg.solve_triangular(ut_system, v_beta, upper=False, unitriangular=True)
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+q137 FAIL control exp=B got=A 4916ms :: 'A\n'
+q138 FAIL control exp=B got=A 1510ms :: 'A\n'
+q139 FAIL control exp=04 got=47 3031ms :: '47\n'
+q140 FAIL control exp=C got=B 2458ms :: ' B\n'
+== main 0/0 control 0/4 errors 0 ==
+   mirror pairs both-correct: 0/0
+ALLDONE

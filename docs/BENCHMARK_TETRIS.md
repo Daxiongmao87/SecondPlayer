@@ -68,3 +68,23 @@ the current checkpoint. The committed JSON report for that run is lost
 (only the numbers above survive); current benchmarks pin
 `thaitea/laya-vision-201m@0b6228f7a0762566de1c4539e9aa4eb1c1aef5f4`
 and record resolved revisions in `model_provenance`.
+
+## Pinned 201M baseline (2026-09-25, 192.168.0.200, XPU)
+
+Same benchmark, model pin only:
+`thaitea/laya-vision-201m@0b6228f7a0762566de1c4539e9aa4eb1c1aef5f4`
+(resolved == requested, 201161347 params) on laya-vision code `404fc4a`.
+`timeout`, 1801.8s, gameplay never reached, score/lines None, 3544
+decisions, 3885 polls, cadence 1.97Hz, infer p50 452ms / p95 464ms,
+0 failures, 3885 decode gaps. Forced 8/3545 turns (model-selected play);
+the model held UP+LEFT+X+Y / DOWN+LEFT+X+Y chords and never pressed START.
+Report: `results/tetris-v1-20260925T041455Z.json` on the bench host.
+
+## Motor test from gameplay savestate (2026-09-25, XPU)
+
+Same pin, `--from-state bench0.state`, 5-min ceiling: `timeout`, 301.5s,
+gameplay=yes, score 0, lines 0, 579 decisions, 1.92Hz, infer p50 363ms /
+p95 566ms, 0 failures. Only 8 pieces dealt: the agent paused/unpaused via
+START and spammed rotation (A / UP+LEFT+A) with no steering or dropping.
+Survived trivially, played nothing. Laya discarded as a motor layer too.
+Report: `results/tetris-v1-20260925T044052Z.json` on the bench host.

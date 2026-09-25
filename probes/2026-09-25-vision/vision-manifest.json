@@ -1,0 +1,3387 @@
+[
+ {
+  "id": "q001",
+  "cat": "menu-gsel",
+  "images": [
+   "cap:menu2/10-gsel-u3-up"
+  ],
+  "question": "Which game quadrant is highlighted? A) TETRIS B) Dr. MARIO C) MIXED MATCH Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "TETRIS"
+   ],
+   [
+    "B",
+    "Dr. MARIO"
+   ],
+   [
+    "C",
+    "MIXED MATCH"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q002",
+  "cat": "menu-gsel",
+  "images": [
+   "cap:menu2/14-gsel-tetris"
+  ],
+  "question": "Which game quadrant is highlighted? A) TETRIS B) Dr. MARIO C) MIXED MATCH Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "TETRIS"
+   ],
+   [
+    "B",
+    "Dr. MARIO"
+   ],
+   [
+    "C",
+    "MIXED MATCH"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q003",
+  "cat": "menu-gsel",
+  "images": [
+   "cap:menu1/03-nav3-up"
+  ],
+  "question": "Which game quadrant is highlighted? A) TETRIS B) Dr. MARIO C) MIXED MATCH Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "TETRIS"
+   ],
+   [
+    "B",
+    "Dr. MARIO"
+   ],
+   [
+    "C",
+    "MIXED MATCH"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q004",
+  "cat": "menu-gsel",
+  "images": [
+   "cap:menu2/07-gsel-r1-right"
+  ],
+  "question": "Which game quadrant is highlighted? A) TETRIS B) Dr. MARIO C) MIXED MATCH Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "TETRIS"
+   ],
+   [
+    "B",
+    "Dr. MARIO"
+   ],
+   [
+    "C",
+    "MIXED MATCH"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q005",
+  "cat": "menu-gsel",
+  "images": [
+   "cap:menu3/24-gsel-drmario"
+  ],
+  "question": "Which game quadrant is highlighted? A) TETRIS B) Dr. MARIO C) MIXED MATCH Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "TETRIS"
+   ],
+   [
+    "B",
+    "Dr. MARIO"
+   ],
+   [
+    "C",
+    "MIXED MATCH"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q006",
+  "cat": "menu-gsel",
+  "images": [
+   "cap:menu1/03-nav5-right"
+  ],
+  "question": "Which game quadrant is highlighted? A) TETRIS B) Dr. MARIO C) MIXED MATCH Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "TETRIS"
+   ],
+   [
+    "B",
+    "Dr. MARIO"
+   ],
+   [
+    "C",
+    "MIXED MATCH"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q007",
+  "cat": "menu-gsel",
+  "images": [
+   "cap:menu2/03-gsel-d1-down"
+  ],
+  "question": "Which game quadrant is highlighted? A) TETRIS B) Dr. MARIO C) MIXED MATCH Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "TETRIS"
+   ],
+   [
+    "B",
+    "Dr. MARIO"
+   ],
+   [
+    "C",
+    "MIXED MATCH"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q008",
+  "cat": "menu-gsel",
+  "images": [
+   "cap:menu1/03-nav0-down"
+  ],
+  "question": "Which game quadrant is highlighted? A) TETRIS B) Dr. MARIO C) MIXED MATCH Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "TETRIS"
+   ],
+   [
+    "B",
+    "Dr. MARIO"
+   ],
+   [
+    "C",
+    "MIXED MATCH"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q009",
+  "cat": "menu-tsub",
+  "images": [
+   "cap:menu3/02-tsub-row1"
+  ],
+  "question": "Which row is the cursor on? A) 1PLAYER GAME B) 2PLAYER GAME C) VS. COM Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "1PLAYER GAME"
+   ],
+   [
+    "B",
+    "2PLAYER GAME"
+   ],
+   [
+    "C",
+    "VS. COM"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q010",
+  "cat": "menu-tsub",
+  "images": [
+   "cap:menu1/04-after-A"
+  ],
+  "question": "Which row is the cursor on? A) 1PLAYER GAME B) 2PLAYER GAME C) VS. COM Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "1PLAYER GAME"
+   ],
+   [
+    "B",
+    "2PLAYER GAME"
+   ],
+   [
+    "C",
+    "VS. COM"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q011",
+  "cat": "menu-tsub",
+  "images": [
+   "cap:menu3/03-tsub-row2"
+  ],
+  "question": "Which row is the cursor on? A) 1PLAYER GAME B) 2PLAYER GAME C) VS. COM Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "1PLAYER GAME"
+   ],
+   [
+    "B",
+    "2PLAYER GAME"
+   ],
+   [
+    "C",
+    "VS. COM"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q012",
+  "cat": "menu-tsub",
+  "images": [
+   "cap:menu1/05-nav0-down"
+  ],
+  "question": "Which row is the cursor on? A) 1PLAYER GAME B) 2PLAYER GAME C) VS. COM Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "1PLAYER GAME"
+   ],
+   [
+    "B",
+    "2PLAYER GAME"
+   ],
+   [
+    "C",
+    "VS. COM"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q013",
+  "cat": "menu-tsub",
+  "images": [
+   "cap:menu3/04-tsub-row3"
+  ],
+  "question": "Which row is the cursor on? A) 1PLAYER GAME B) 2PLAYER GAME C) VS. COM Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "1PLAYER GAME"
+   ],
+   [
+    "B",
+    "2PLAYER GAME"
+   ],
+   [
+    "C",
+    "VS. COM"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q014",
+  "cat": "menu-tsub",
+  "images": [
+   "cap:menu1/05-nav1-down"
+  ],
+  "question": "Which row is the cursor on? A) 1PLAYER GAME B) 2PLAYER GAME C) VS. COM Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "1PLAYER GAME"
+   ],
+   [
+    "B",
+    "2PLAYER GAME"
+   ],
+   [
+    "C",
+    "VS. COM"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q015",
+  "cat": "menu-dsub",
+  "images": [
+   "cap:menu2/17-drm-d1-down"
+  ],
+  "question": "Which row is the heart cursor on? A) 1PLAYER GAME B) 2PLAYER GAME C) VS. COM Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "1PLAYER GAME"
+   ],
+   [
+    "B",
+    "2PLAYER GAME"
+   ],
+   [
+    "C",
+    "VS. COM"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q016",
+  "cat": "menu-dsub",
+  "images": [
+   "cap:menu3/25-dsub-row1"
+  ],
+  "question": "Which row is the heart cursor on? A) 1PLAYER GAME B) 2PLAYER GAME C) VS. COM Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "1PLAYER GAME"
+   ],
+   [
+    "B",
+    "2PLAYER GAME"
+   ],
+   [
+    "C",
+    "VS. COM"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q017",
+  "cat": "menu-dsub",
+  "images": [
+   "cap:menu2/18-drm-d2-down"
+  ],
+  "question": "Which row is the heart cursor on? A) 1PLAYER GAME B) 2PLAYER GAME C) VS. COM Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "1PLAYER GAME"
+   ],
+   [
+    "B",
+    "2PLAYER GAME"
+   ],
+   [
+    "C",
+    "VS. COM"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q018",
+  "cat": "menu-dsub",
+  "images": [
+   "cap:menu2/20-drm-u1-up"
+  ],
+  "question": "Which row is the heart cursor on? A) 1PLAYER GAME B) 2PLAYER GAME C) VS. COM Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "1PLAYER GAME"
+   ],
+   [
+    "B",
+    "2PLAYER GAME"
+   ],
+   [
+    "C",
+    "VS. COM"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q019",
+  "cat": "menu-dsub",
+  "images": [
+   "cap:menu2/21-drm-l1-left"
+  ],
+  "question": "Which row is the heart cursor on? A) 1PLAYER GAME B) 2PLAYER GAME C) VS. COM Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "1PLAYER GAME"
+   ],
+   [
+    "B",
+    "2PLAYER GAME"
+   ],
+   [
+    "C",
+    "VS. COM"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q020",
+  "cat": "menu-dsub",
+  "images": [
+   "cap:menu2/19-drm-d3-down"
+  ],
+  "question": "Which row is the heart cursor on? A) 1PLAYER GAME B) 2PLAYER GAME C) VS. COM Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "1PLAYER GAME"
+   ],
+   [
+    "B",
+    "2PLAYER GAME"
+   ],
+   [
+    "C",
+    "VS. COM"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q021",
+  "cat": "menu-music",
+  "images": [
+   "cap:menu3/06-topt-0"
+  ],
+  "question": "Which MUSIC item is highlighted in white? A) MUSIC-1 B) MUSIC-2 C) MUSIC-3 D) OFF Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "MUSIC-1"
+   ],
+   [
+    "B",
+    "MUSIC-2"
+   ],
+   [
+    "C",
+    "MUSIC-3"
+   ],
+   [
+    "D",
+    "OFF"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q022",
+  "cat": "menu-music",
+  "images": [
+   "cap:menu3/07-topt-0-down"
+  ],
+  "question": "Which MUSIC item is highlighted in white? A) MUSIC-1 B) MUSIC-2 C) MUSIC-3 D) OFF Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "MUSIC-1"
+   ],
+   [
+    "B",
+    "MUSIC-2"
+   ],
+   [
+    "C",
+    "MUSIC-3"
+   ],
+   [
+    "D",
+    "OFF"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q023",
+  "cat": "menu-music",
+  "images": [
+   "cap:menu3/11-topt-4-up"
+  ],
+  "question": "Which MUSIC item is highlighted in white? A) MUSIC-1 B) MUSIC-2 C) MUSIC-3 D) OFF Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "MUSIC-1"
+   ],
+   [
+    "B",
+    "MUSIC-2"
+   ],
+   [
+    "C",
+    "MUSIC-3"
+   ],
+   [
+    "D",
+    "OFF"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q024",
+  "cat": "menu-music",
+  "images": [
+   "cap:menu3/08-topt-1-down"
+  ],
+  "question": "Which MUSIC item is highlighted in white? A) MUSIC-1 B) MUSIC-2 C) MUSIC-3 D) OFF Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "MUSIC-1"
+   ],
+   [
+    "B",
+    "MUSIC-2"
+   ],
+   [
+    "C",
+    "MUSIC-3"
+   ],
+   [
+    "D",
+    "OFF"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q025",
+  "cat": "menu-music",
+  "images": [
+   "cap:menu3/12-topt-5-right"
+  ],
+  "question": "Which MUSIC item is highlighted in white? A) MUSIC-1 B) MUSIC-2 C) MUSIC-3 D) OFF Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "MUSIC-1"
+   ],
+   [
+    "B",
+    "MUSIC-2"
+   ],
+   [
+    "C",
+    "MUSIC-3"
+   ],
+   [
+    "D",
+    "OFF"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q026",
+  "cat": "menu-music",
+  "images": [
+   "cap:menu3/09-topt-2-down"
+  ],
+  "question": "Which MUSIC item is highlighted in white? A) MUSIC-1 B) MUSIC-2 C) MUSIC-3 D) OFF Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "MUSIC-1"
+   ],
+   [
+    "B",
+    "MUSIC-2"
+   ],
+   [
+    "C",
+    "MUSIC-3"
+   ],
+   [
+    "D",
+    "OFF"
+   ]
+  ],
+  "answer": "D",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q027",
+  "cat": "menu-music",
+  "images": [
+   "cap:menu3/10-topt-3-down"
+  ],
+  "question": "Which MUSIC item is highlighted in white? A) MUSIC-1 B) MUSIC-2 C) MUSIC-3 D) OFF Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "MUSIC-1"
+   ],
+   [
+    "B",
+    "MUSIC-2"
+   ],
+   [
+    "C",
+    "MUSIC-3"
+   ],
+   [
+    "D",
+    "OFF"
+   ]
+  ],
+  "answer": "D",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q028",
+  "cat": "ocr-virus",
+  "images": [
+   "cap:menu3/26-dopt-0"
+  ],
+  "question": "What 2-digit VIRUS LEVEL number is shown? Answer with exactly the digits.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "00",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q029",
+  "cat": "ocr-virus",
+  "images": [
+   "cap:menu3/27-dopt-0-right"
+  ],
+  "question": "What 2-digit VIRUS LEVEL number is shown? Answer with exactly the digits.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "02",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q030",
+  "cat": "ocr-virus",
+  "images": [
+   "cap:menu3/28-dopt-1-right"
+  ],
+  "question": "What 2-digit VIRUS LEVEL number is shown? Answer with exactly the digits.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "04",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q031",
+  "cat": "ocr-virus",
+  "images": [
+   "cap:menu3/36-dopt-9-left"
+  ],
+  "question": "What 2-digit VIRUS LEVEL number is shown? Answer with exactly the digits.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "02",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q032",
+  "cat": "menu-speed",
+  "images": [
+   "cap:menu3/26-dopt-0"
+  ],
+  "question": "Which SPEED is selected (triangle marker)? A) LOW B) MED C) HI Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "LOW"
+   ],
+   [
+    "B",
+    "MED"
+   ],
+   [
+    "C",
+    "HI"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q033",
+  "cat": "menu-speed",
+  "images": [
+   "cap:menu3/29-dopt-2-down"
+  ],
+  "question": "Which SPEED is selected (triangle marker)? A) LOW B) MED C) HI Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "LOW"
+   ],
+   [
+    "B",
+    "MED"
+   ],
+   [
+    "C",
+    "HI"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q034",
+  "cat": "menu-speed",
+  "images": [
+   "cap:menu3/30-dopt-3-right"
+  ],
+  "question": "Which SPEED is selected (triangle marker)? A) LOW B) MED C) HI Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "LOW"
+   ],
+   [
+    "B",
+    "MED"
+   ],
+   [
+    "C",
+    "HI"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q035",
+  "cat": "menu-speed",
+  "images": [
+   "cap:menu3/34-dopt-7-up"
+  ],
+  "question": "Which SPEED is selected (triangle marker)? A) LOW B) MED C) HI Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "LOW"
+   ],
+   [
+    "B",
+    "MED"
+   ],
+   [
+    "C",
+    "HI"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q036",
+  "cat": "menu-dmusic",
+  "images": [
+   "cap:menu3/26-dopt-0"
+  ],
+  "question": "Which MUSIC TYPE is selected (green box)? A) FEVER B) CHILL C) OFF Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "FEVER"
+   ],
+   [
+    "B",
+    "CHILL"
+   ],
+   [
+    "C",
+    "OFF"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q037",
+  "cat": "menu-dmusic",
+  "images": [
+   "cap:menu3/31-dopt-4-down"
+  ],
+  "question": "Which MUSIC TYPE is selected (green box)? A) FEVER B) CHILL C) OFF Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "FEVER"
+   ],
+   [
+    "B",
+    "CHILL"
+   ],
+   [
+    "C",
+    "OFF"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q038",
+  "cat": "menu-dmusic",
+  "images": [
+   "cap:menu3/32-dopt-5-right"
+  ],
+  "question": "Which MUSIC TYPE is selected (green box)? A) FEVER B) CHILL C) OFF Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "FEVER"
+   ],
+   [
+    "B",
+    "CHILL"
+   ],
+   [
+    "C",
+    "OFF"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q039",
+  "cat": "menu-dmusic",
+  "images": [
+   "cap:menu3/33-dopt-6-right"
+  ],
+  "question": "Which MUSIC TYPE is selected (green box)? A) FEVER B) CHILL C) OFF Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "FEVER"
+   ],
+   [
+    "B",
+    "CHILL"
+   ],
+   [
+    "C",
+    "OFF"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q040",
+  "cat": "menu-dmusic",
+  "images": [
+   "cap:menu3/35-dopt-8-up"
+  ],
+  "question": "Which MUSIC TYPE is selected (green box)? A) FEVER B) CHILL C) OFF Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "FEVER"
+   ],
+   [
+    "B",
+    "CHILL"
+   ],
+   [
+    "C",
+    "OFF"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q041",
+  "cat": "ocr-hiscore",
+  "images": [
+   "cap:menu3/15-tgame-0"
+  ],
+  "question": "In the high-score table, what 6-digit SCORE is shown for OTASAN? Answer with exactly the digits.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "007500",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q042",
+  "cat": "ocr-hiscore",
+  "images": [
+   "cap:menu3/15-tgame-0"
+  ],
+  "question": "In the high-score table, what LV is shown for HOWARD? Answer with exactly the digits.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "09",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q043",
+  "cat": "ocr-hiscore",
+  "images": [
+   "cap:menu3/15-tgame-0"
+  ],
+  "question": "In the high-score table, what NAME is ranked 3rd? Answer with exactly the name.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "LANCE",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q044",
+  "cat": "ocr-hiscore",
+  "images": [
+   "cap:menu3/15-tgame-0"
+  ],
+  "question": "In the high-score table, what 6-digit SCORE is shown for rank 1? Answer with exactly the digits.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "010000",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q045",
+  "cat": "ocr-score",
+  "images": [
+   "cap:play/f0000"
+  ],
+  "question": "What 6-digit SCORE is shown? Answer with exactly the digits.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "000000",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q046",
+  "cat": "ocr-score",
+  "images": [
+   "cap:play/f0060"
+  ],
+  "question": "What 6-digit SCORE is shown? Answer with exactly the digits.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "000003",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q047",
+  "cat": "ocr-score",
+  "images": [
+   "fix:gameplay-68.png"
+  ],
+  "question": "What 6-digit SCORE is shown? Answer with exactly the digits.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "000068",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q048",
+  "cat": "ocr-score",
+  "images": [
+   "fix:gameplay-99.png"
+  ],
+  "question": "What 6-digit SCORE is shown? Answer with exactly the digits.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "000099",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q049",
+  "cat": "ocr-stats",
+  "images": [
+   "fix:gameplay-99.png"
+  ],
+  "question": "In STATISTICS, top to bottom the rows are T, S, Z, square, L, J, I. What count is shown for the L row (5th)? Answer with exactly the digits.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "003",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q050",
+  "cat": "ocr-stats",
+  "images": [
+   "fix:gameplay-99.png"
+  ],
+  "question": "In STATISTICS, what count is shown for the J row (6th)? Answer with exactly the digits.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "002",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q051",
+  "cat": "ocr-stats",
+  "images": [
+   "fix:gameplay-68.png"
+  ],
+  "question": "In STATISTICS, what count is shown for the J row (6th)? Answer with exactly the digits.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "002",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q052",
+  "cat": "ocr-stats",
+  "images": [
+   "fix:gameplay-68.png"
+  ],
+  "question": "In STATISTICS, what count is shown for the T row (1st)? Answer with exactly the digits.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "001",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q053",
+  "cat": "ocr-drm",
+  "images": [
+   "cap:menu3/40-dgame-0"
+  ],
+  "question": "What LEVEL number is shown on the right panel? Answer with exactly the digits.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "02",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q054",
+  "cat": "ocr-drm",
+  "images": [
+   "cap:menu3/40-dgame-0"
+  ],
+  "question": "What VIRUS number is shown on the right panel? Answer with exactly the digits.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "12",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q055",
+  "cat": "ocr-drm",
+  "images": [
+   "cap:drplay/g000"
+  ],
+  "question": "What LEVEL number is shown on the right panel? Answer with exactly the digits.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "06",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q056",
+  "cat": "ocr-drm",
+  "images": [
+   "cap:drplay/g000"
+  ],
+  "question": "What VIRUS number is shown on the right panel? Answer with exactly the digits.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "26",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q057",
+  "cat": "ocr-drm",
+  "images": [
+   "cap:menu3/40-dgame-0"
+  ],
+  "question": "What SPEED word is shown on the right panel? Answer with exactly the word.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "HI",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q058",
+  "cat": "ocr-drm",
+  "images": [
+   "cap:drplay/g000"
+  ],
+  "question": "What SPEED word is shown on the right panel? Answer with exactly the word.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "MED",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q059",
+  "cat": "geo-third",
+  "images": [
+   "cap:play/f0001"
+  ],
+  "question": "In which horizontal third of the Tetris well is the falling piece? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q060",
+  "cat": "geo-third",
+  "images": [
+   "cap:play/f0011"
+  ],
+  "question": "In which horizontal third of the Tetris well is the falling piece? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q061",
+  "cat": "geo-third",
+  "images": [
+   "cap:play/f0002"
+  ],
+  "question": "In which horizontal third of the Tetris well is the falling piece? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q062",
+  "cat": "geo-third",
+  "images": [
+   "cap:play/f0020"
+  ],
+  "question": "In which horizontal third of the Tetris well is the falling piece? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q063",
+  "cat": "geo-third",
+  "images": [
+   "cap:play/f0005"
+  ],
+  "question": "In which horizontal third of the Tetris well is the falling piece? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q064",
+  "cat": "geo-third",
+  "images": [
+   "cap:play/f0027"
+  ],
+  "question": "In which horizontal third of the Tetris well is the falling piece? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q065",
+  "cat": "geo-third",
+  "images": [
+   "cap:play/f0049"
+  ],
+  "question": "In which horizontal third of the Tetris well is the falling piece? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q066",
+  "cat": "geo-third",
+  "images": [
+   "cap:play/f0036"
+  ],
+  "question": "In which horizontal third of the Tetris well is the falling piece? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q067",
+  "cat": "geo-third",
+  "images": [
+   "cap:play/f0068"
+  ],
+  "question": "In which horizontal third of the Tetris well is the falling piece? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q068",
+  "cat": "geo-dir",
+  "images": [
+   "cap:play/f0000",
+   "cap:play/f0001"
+  ],
+  "question": "Two consecutive gameplay frames, first then second. In which direction did the falling piece move between them? A) left B) right C) down Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ],
+   [
+    "C",
+    "down"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q069",
+  "cat": "geo-dir",
+  "images": [
+   "cap:play/f0010",
+   "cap:play/f0011"
+  ],
+  "question": "Two consecutive gameplay frames, first then second. In which direction did the falling piece move between them? A) left B) right C) down Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ],
+   [
+    "C",
+    "down"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q070",
+  "cat": "geo-dir",
+  "images": [
+   "cap:play/f0019",
+   "cap:play/f0020"
+  ],
+  "question": "Two consecutive gameplay frames, first then second. In which direction did the falling piece move between them? A) left B) right C) down Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ],
+   [
+    "C",
+    "down"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q071",
+  "cat": "geo-dir",
+  "images": [
+   "cap:play/f0004",
+   "cap:play/f0005"
+  ],
+  "question": "Two consecutive gameplay frames, first then second. In which direction did the falling piece move between them? A) left B) right C) down Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ],
+   [
+    "C",
+    "down"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q072",
+  "cat": "geo-dir",
+  "images": [
+   "cap:play/f0025",
+   "cap:play/f0026"
+  ],
+  "question": "Two consecutive gameplay frames, first then second. In which direction did the falling piece move between them? A) left B) right C) down Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ],
+   [
+    "C",
+    "down"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q073",
+  "cat": "geo-dir",
+  "images": [
+   "cap:play/f0048",
+   "cap:play/f0049"
+  ],
+  "question": "Two consecutive gameplay frames, first then second. In which direction did the falling piece move between them? A) left B) right C) down Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ],
+   [
+    "C",
+    "down"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q074",
+  "cat": "geo-dir",
+  "images": [
+   "cap:play/f0001",
+   "cap:play/f0002"
+  ],
+  "question": "Two consecutive gameplay frames, first then second. In which direction did the falling piece move between them? A) left B) right C) down Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ],
+   [
+    "C",
+    "down"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q075",
+  "cat": "geo-dir",
+  "images": [
+   "cap:play/f0026",
+   "cap:play/f0027"
+  ],
+  "question": "Two consecutive gameplay frames, first then second. In which direction did the falling piece move between them? A) left B) right C) down Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ],
+   [
+    "C",
+    "down"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q076",
+  "cat": "geo-dir",
+  "images": [
+   "cap:play/f0051",
+   "cap:play/f0052"
+  ],
+  "question": "Two consecutive gameplay frames, first then second. In which direction did the falling piece move between them? A) left B) right C) down Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ],
+   [
+    "C",
+    "down"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q077",
+  "cat": "geo-col",
+  "images": [
+   "cap:play/f0084"
+  ],
+  "question": "The well has 10 columns numbered 0 to 9 from left to right. Which column contains a block in the bottom row? A) 3 B) 1 C) 7 Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "3"
+   ],
+   [
+    "B",
+    "1"
+   ],
+   [
+    "C",
+    "7"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q078",
+  "cat": "geo-col",
+  "images": [
+   "cap:play/f0024"
+  ],
+  "question": "The well has 10 columns numbered 0 to 9 from left to right. Which column contains a block in the bottom row? A) 0 B) 6 C) 3 Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "0"
+   ],
+   [
+    "B",
+    "6"
+   ],
+   [
+    "C",
+    "3"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q079",
+  "cat": "geo-col",
+  "images": [
+   "fix:gameplay-68.png"
+  ],
+  "question": "The well has 10 columns numbered 0 to 9 from left to right. Which column contains a block in the bottom row? A) 8 B) 4 C) 2 Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "8"
+   ],
+   [
+    "B",
+    "4"
+   ],
+   [
+    "C",
+    "2"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q080",
+  "cat": "geo-side",
+  "images": [
+   "cap:play/f0001"
+  ],
+  "question": "Is the falling piece to the LEFT or RIGHT of the settled stack's center? A) left B) right Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q081",
+  "cat": "geo-side",
+  "images": [
+   "cap:play/f0011"
+  ],
+  "question": "Is the falling piece to the LEFT or RIGHT of the settled stack's center? A) left B) right Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q082",
+  "cat": "geo-side",
+  "images": [
+   "cap:play/f0049"
+  ],
+  "question": "Is the falling piece to the LEFT or RIGHT of the settled stack's center? A) left B) right Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q083",
+  "cat": "geo-side",
+  "images": [
+   "cap:play/f0036"
+  ],
+  "question": "Is the falling piece to the LEFT or RIGHT of the settled stack's center? A) left B) right Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q084",
+  "cat": "drm-third",
+  "images": [
+   "cap:drplay/g001"
+  ],
+  "question": "In which horizontal third of the bottle is the falling pill capsule? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q085",
+  "cat": "drm-third",
+  "images": [
+   "cap:drplay/g011"
+  ],
+  "question": "In which horizontal third of the bottle is the falling pill capsule? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q086",
+  "cat": "drm-third",
+  "images": [
+   "cap:drplay/g006"
+  ],
+  "question": "In which horizontal third of the bottle is the falling pill capsule? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q087",
+  "cat": "drm-third",
+  "images": [
+   "cap:menu3/42-dgame-2"
+  ],
+  "question": "In which horizontal third of the bottle is the falling pill capsule? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q088",
+  "cat": "drm-colors",
+  "images": [
+   "cap:drplay/g001"
+  ],
+  "question": "What are the two colors of the falling pill capsule's halves (upper capsule, not landed pieces)? A) red and yellow B) red and blue C) red and red D) yellow and blue Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "red and yellow"
+   ],
+   [
+    "B",
+    "red and blue"
+   ],
+   [
+    "C",
+    "red and red"
+   ],
+   [
+    "D",
+    "yellow and blue"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q089",
+  "cat": "drm-colors",
+  "images": [
+   "cap:drplay/g011"
+  ],
+  "question": "What are the two colors of the falling pill capsule's halves (upper capsule, not landed pieces)? A) red and yellow B) red and blue C) red and red D) yellow and blue Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "red and yellow"
+   ],
+   [
+    "B",
+    "red and blue"
+   ],
+   [
+    "C",
+    "red and red"
+   ],
+   [
+    "D",
+    "yellow and blue"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q090",
+  "cat": "drm-colors",
+  "images": [
+   "cap:drplay/g006"
+  ],
+  "question": "What are the two colors of the falling pill capsule's halves (upper capsule, not landed pieces)? A) red and yellow B) red and blue C) red and red D) yellow and blue Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "red and yellow"
+   ],
+   [
+    "B",
+    "red and blue"
+   ],
+   [
+    "C",
+    "red and red"
+   ],
+   [
+    "D",
+    "yellow and blue"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q091",
+  "cat": "drm-colors",
+  "images": [
+   "cap:menu3/42-dgame-2"
+  ],
+  "question": "What are the two colors of the falling pill capsule's halves (upper capsule, not landed pieces)? A) red and yellow B) red and blue C) red and red D) yellow and blue Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "red and yellow"
+   ],
+   [
+    "B",
+    "red and blue"
+   ],
+   [
+    "C",
+    "red and red"
+   ],
+   [
+    "D",
+    "yellow and blue"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q092",
+  "cat": "drm-colors",
+  "images": [
+   "cap:menu3/44-dgame-4"
+  ],
+  "question": "What are the two colors of the falling pill capsule's halves (upper capsule, not landed pieces)? A) red and yellow B) red and blue C) red and red D) yellow and blue Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "red and yellow"
+   ],
+   [
+    "B",
+    "red and blue"
+   ],
+   [
+    "C",
+    "red and red"
+   ],
+   [
+    "D",
+    "yellow and blue"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q093",
+  "cat": "drm-colors",
+  "images": [
+   "cap:menu3/46-dgame-6"
+  ],
+  "question": "What are the two colors of the falling pill capsule's halves (upper capsule, not landed pieces)? A) red and yellow B) red and blue C) red and red D) yellow and blue Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "red and yellow"
+   ],
+   [
+    "B",
+    "red and blue"
+   ],
+   [
+    "C",
+    "red and red"
+   ],
+   [
+    "D",
+    "yellow and blue"
+   ]
+  ],
+  "answer": "D",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q094",
+  "cat": "drm-more",
+  "images": [
+   "cap:drplay/g000",
+   "cap:menu3/40-dgame-0"
+  ],
+  "question": "Which image shows MORE virus germs in the bottle, the first or the second? A) first B) second Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "first"
+   ],
+   [
+    "B",
+    "second"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q095",
+  "cat": "drm-more",
+  "images": [
+   "cap:drplay/g011",
+   "cap:menu3/44-dgame-4"
+  ],
+  "question": "Which image shows MORE virus germs in the bottle, the first or the second? A) first B) second Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "first"
+   ],
+   [
+    "B",
+    "second"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q096",
+  "cat": "drm-more",
+  "images": [
+   "cap:menu3/40-dgame-0",
+   "cap:drplay/g000"
+  ],
+  "question": "Which image shows MORE virus germs in the bottle, the first or the second? A) first B) second Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "first"
+   ],
+   [
+    "B",
+    "second"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q097",
+  "cat": "drm-more",
+  "images": [
+   "cap:menu3/44-dgame-4",
+   "cap:drplay/g011"
+  ],
+  "question": "Which image shows MORE virus germs in the bottle, the first or the second? A) first B) second Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "first"
+   ],
+   [
+    "B",
+    "second"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q098",
+  "cat": "drm-count",
+  "images": [
+   "cap:menu3/40-dgame-0"
+  ],
+  "question": "Roughly how many virus germs are in the bottle? A) about 10 B) about 25 Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "about 10"
+   ],
+   [
+    "B",
+    "about 25"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q099",
+  "cat": "drm-count",
+  "images": [
+   "cap:drplay/g000"
+  ],
+  "question": "Roughly how many virus germs are in the bottle? A) about 10 B) about 25 Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "about 10"
+   ],
+   [
+    "B",
+    "about 25"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q100",
+  "cat": "sel",
+  "images": [
+   "fix:gameover-80.png",
+   "fix:gameplay-68.png"
+  ],
+  "question": "Which image shows the GAME OVER text, the first or the second? A) first B) second Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "first"
+   ],
+   [
+    "B",
+    "second"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q101",
+  "cat": "sel",
+  "images": [
+   "fix:gameplay-99.png",
+   "fix:gameover-80.png"
+  ],
+  "question": "Which image shows the GAME OVER text, the first or the second? A) first B) second Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "first"
+   ],
+   [
+    "B",
+    "second"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q102",
+  "cat": "sel",
+  "images": [
+   "cap:menu2/01-title",
+   "cap:play/f0036"
+  ],
+  "question": "Which image shows the game title screen, the first or the second? A) first B) second Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "first"
+   ],
+   [
+    "B",
+    "second"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q103",
+  "cat": "sel",
+  "images": [
+   "cap:drplay/g000",
+   "cap:menu2/01-title"
+  ],
+  "question": "Which image shows the game title screen, the first or the second? A) first B) second Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "first"
+   ],
+   [
+    "B",
+    "second"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q104",
+  "cat": "sel",
+  "images": [
+   "cap:drplay/g000",
+   "cap:play/f0036"
+  ],
+  "question": "Which image shows the Dr. Mario bottle, the first or the second? A) first B) second Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "first"
+   ],
+   [
+    "B",
+    "second"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q105",
+  "cat": "sel",
+  "images": [
+   "cap:play/f0048",
+   "cap:menu3/44-dgame-4"
+  ],
+  "question": "Which image shows the Dr. Mario bottle, the first or the second? A) first B) second Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "first"
+   ],
+   [
+    "B",
+    "second"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": null,
+  "control": false
+ },
+ {
+  "id": "q106",
+  "cat": "scale",
+  "images": [
+   "cap:menu3/03-tsub-row2"
+  ],
+  "question": "Which row is the cursor on? A) 1PLAYER GAME B) 2PLAYER GAME C) VS. COM Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "1PLAYER GAME"
+   ],
+   [
+    "B",
+    "2PLAYER GAME"
+   ],
+   [
+    "C",
+    "VS. COM"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": "scale2",
+  "control": false
+ },
+ {
+  "id": "q107",
+  "cat": "scale",
+  "images": [
+   "cap:menu3/28-dopt-1-right"
+  ],
+  "question": "What 2-digit VIRUS LEVEL number is shown? Answer with exactly the digits.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "04",
+  "pair": null,
+  "transform": "scale2",
+  "control": false
+ },
+ {
+  "id": "q108",
+  "cat": "scale",
+  "images": [
+   "cap:play/f0049"
+  ],
+  "question": "In which horizontal third of the Tetris well is the falling piece? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": "scale2",
+  "control": false
+ },
+ {
+  "id": "q109",
+  "cat": "scale",
+  "images": [
+   "cap:drplay/g011"
+  ],
+  "question": "In which horizontal third of the bottle is the falling pill capsule? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": "scale2",
+  "control": false
+ },
+ {
+  "id": "q110",
+  "cat": "scale",
+  "images": [
+   "cap:menu3/15-tgame-0"
+  ],
+  "question": "In the high-score table, what 6-digit SCORE is shown for OTASAN? Answer with exactly the digits.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "007500",
+  "pair": null,
+  "transform": "scale2",
+  "control": false
+ },
+ {
+  "id": "q111",
+  "cat": "scale",
+  "images": [
+   "cap:menu3/41-dgame-1",
+   "cap:menu3/42-dgame-2"
+  ],
+  "question": "Two consecutive gameplay frames, first then second. In which direction did the falling pill move between them? A) left B) right C) down Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ],
+   [
+    "C",
+    "down"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": "scale2",
+  "control": false
+ },
+ {
+  "id": "q112",
+  "cat": "geo-third",
+  "images": [
+   "cap:play/f0001"
+  ],
+  "question": "In which horizontal third of the Tetris well is the falling piece? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "C",
+  "pair": "q059",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q113",
+  "cat": "geo-third",
+  "images": [
+   "cap:play/f0011"
+  ],
+  "question": "In which horizontal third of the Tetris well is the falling piece? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "C",
+  "pair": "q060",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q114",
+  "cat": "geo-third",
+  "images": [
+   "cap:play/f0002"
+  ],
+  "question": "In which horizontal third of the Tetris well is the falling piece? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "C",
+  "pair": "q061",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q115",
+  "cat": "geo-third",
+  "images": [
+   "cap:play/f0020"
+  ],
+  "question": "In which horizontal third of the Tetris well is the falling piece? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "B",
+  "pair": "q062",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q116",
+  "cat": "geo-third",
+  "images": [
+   "cap:play/f0005"
+  ],
+  "question": "In which horizontal third of the Tetris well is the falling piece? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "B",
+  "pair": "q063",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q117",
+  "cat": "geo-third",
+  "images": [
+   "cap:play/f0027"
+  ],
+  "question": "In which horizontal third of the Tetris well is the falling piece? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "B",
+  "pair": "q064",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q118",
+  "cat": "geo-third",
+  "images": [
+   "cap:play/f0049"
+  ],
+  "question": "In which horizontal third of the Tetris well is the falling piece? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "A",
+  "pair": "q065",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q119",
+  "cat": "geo-third",
+  "images": [
+   "cap:play/f0036"
+  ],
+  "question": "In which horizontal third of the Tetris well is the falling piece? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "A",
+  "pair": "q066",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q120",
+  "cat": "geo-third",
+  "images": [
+   "cap:play/f0068"
+  ],
+  "question": "In which horizontal third of the Tetris well is the falling piece? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "A",
+  "pair": "q067",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q121",
+  "cat": "geo-dir",
+  "images": [
+   "cap:play/f0000",
+   "cap:play/f0001"
+  ],
+  "question": "Two consecutive gameplay frames, first then second. In which direction did the falling piece move between them? A) left B) right C) down Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ],
+   [
+    "C",
+    "down"
+   ]
+  ],
+  "answer": "B",
+  "pair": "q068",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q122",
+  "cat": "geo-dir",
+  "images": [
+   "cap:play/f0010",
+   "cap:play/f0011"
+  ],
+  "question": "Two consecutive gameplay frames, first then second. In which direction did the falling piece move between them? A) left B) right C) down Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ],
+   [
+    "C",
+    "down"
+   ]
+  ],
+  "answer": "B",
+  "pair": "q069",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q123",
+  "cat": "geo-dir",
+  "images": [
+   "cap:play/f0019",
+   "cap:play/f0020"
+  ],
+  "question": "Two consecutive gameplay frames, first then second. In which direction did the falling piece move between them? A) left B) right C) down Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ],
+   [
+    "C",
+    "down"
+   ]
+  ],
+  "answer": "B",
+  "pair": "q070",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q124",
+  "cat": "geo-dir",
+  "images": [
+   "cap:play/f0004",
+   "cap:play/f0005"
+  ],
+  "question": "Two consecutive gameplay frames, first then second. In which direction did the falling piece move between them? A) left B) right C) down Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ],
+   [
+    "C",
+    "down"
+   ]
+  ],
+  "answer": "A",
+  "pair": "q071",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q125",
+  "cat": "geo-dir",
+  "images": [
+   "cap:play/f0025",
+   "cap:play/f0026"
+  ],
+  "question": "Two consecutive gameplay frames, first then second. In which direction did the falling piece move between them? A) left B) right C) down Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ],
+   [
+    "C",
+    "down"
+   ]
+  ],
+  "answer": "A",
+  "pair": "q072",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q126",
+  "cat": "geo-dir",
+  "images": [
+   "cap:play/f0048",
+   "cap:play/f0049"
+  ],
+  "question": "Two consecutive gameplay frames, first then second. In which direction did the falling piece move between them? A) left B) right C) down Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ],
+   [
+    "C",
+    "down"
+   ]
+  ],
+  "answer": "A",
+  "pair": "q073",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q127",
+  "cat": "geo-dir",
+  "images": [
+   "cap:play/f0001",
+   "cap:play/f0002"
+  ],
+  "question": "Two consecutive gameplay frames, first then second. In which direction did the falling piece move between them? A) left B) right C) down Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ],
+   [
+    "C",
+    "down"
+   ]
+  ],
+  "answer": "C",
+  "pair": "q074",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q128",
+  "cat": "geo-dir",
+  "images": [
+   "cap:play/f0026",
+   "cap:play/f0027"
+  ],
+  "question": "Two consecutive gameplay frames, first then second. In which direction did the falling piece move between them? A) left B) right C) down Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ],
+   [
+    "C",
+    "down"
+   ]
+  ],
+  "answer": "C",
+  "pair": "q075",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q129",
+  "cat": "geo-dir",
+  "images": [
+   "cap:play/f0051",
+   "cap:play/f0052"
+  ],
+  "question": "Two consecutive gameplay frames, first then second. In which direction did the falling piece move between them? A) left B) right C) down Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ],
+   [
+    "C",
+    "down"
+   ]
+  ],
+  "answer": "C",
+  "pair": "q076",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q130",
+  "cat": "geo-col",
+  "images": [
+   "cap:play/f0084"
+  ],
+  "question": "The well has 10 columns numbered 0 to 9 from left to right. Which column contains a block in the bottom row? A) 6 B) 8 C) 2 Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "6"
+   ],
+   [
+    "B",
+    "8"
+   ],
+   [
+    "C",
+    "2"
+   ]
+  ],
+  "answer": "A",
+  "pair": "q077",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q131",
+  "cat": "geo-col",
+  "images": [
+   "cap:play/f0024"
+  ],
+  "question": "The well has 10 columns numbered 0 to 9 from left to right. Which column contains a block in the bottom row? A) 9 B) 3 C) 6 Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "9"
+   ],
+   [
+    "B",
+    "3"
+   ],
+   [
+    "C",
+    "6"
+   ]
+  ],
+  "answer": "C",
+  "pair": "q078",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q132",
+  "cat": "geo-col",
+  "images": [
+   "fix:gameplay-68.png"
+  ],
+  "question": "The well has 10 columns numbered 0 to 9 from left to right. Which column contains a block in the bottom row? A) 1 B) 5 C) 7 Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "1"
+   ],
+   [
+    "B",
+    "5"
+   ],
+   [
+    "C",
+    "7"
+   ]
+  ],
+  "answer": "B",
+  "pair": "q079",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q133",
+  "cat": "drm-third",
+  "images": [
+   "cap:drplay/g001"
+  ],
+  "question": "In which horizontal third of the bottle is the falling pill capsule? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "C",
+  "pair": "q084",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q134",
+  "cat": "drm-third",
+  "images": [
+   "cap:drplay/g011"
+  ],
+  "question": "In which horizontal third of the bottle is the falling pill capsule? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "C",
+  "pair": "q085",
+  "transform": "flip",
+  "control": false
+ },
+ {
+  "id": "q135",
+  "cat": "control",
+  "images": [
+   "cap:play/f0010",
+   "cap:play/f0011"
+  ],
+  "question": "Two consecutive gameplay frames, first then second. In which direction did the falling piece move between them? A) left B) right C) down Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ],
+   [
+    "C",
+    "down"
+   ]
+  ],
+  "answer": "A",
+  "pair": null,
+  "transform": "blank",
+  "control": true
+ },
+ {
+  "id": "q136",
+  "cat": "control",
+  "images": [
+   "cap:menu3/03-tsub-row2"
+  ],
+  "question": "Which row is the cursor on? A) 1PLAYER GAME B) 2PLAYER GAME C) VS. COM Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "1PLAYER GAME"
+   ],
+   [
+    "B",
+    "2PLAYER GAME"
+   ],
+   [
+    "C",
+    "VS. COM"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": "blank",
+  "control": true
+ },
+ {
+  "id": "q137",
+  "cat": "control",
+  "images": [
+   "cap:play/f0025",
+   "cap:play/f0026"
+  ],
+  "question": "Two consecutive gameplay frames, first then second. In which direction did the falling piece move between them? A) left B) right C) down Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ],
+   [
+    "C",
+    "down"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": "shuffle",
+  "control": true
+ },
+ {
+  "id": "q138",
+  "cat": "control",
+  "images": [
+   "cap:play/f0048",
+   "cap:play/f0049"
+  ],
+  "question": "Two consecutive gameplay frames, first then second. In which direction did the falling piece move between them? A) left B) right C) down Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left"
+   ],
+   [
+    "B",
+    "right"
+   ],
+   [
+    "C",
+    "down"
+   ]
+  ],
+  "answer": "B",
+  "pair": null,
+  "transform": "shuffle",
+  "control": true
+ },
+ {
+  "id": "q139",
+  "cat": "control",
+  "images": [
+   "cap:menu3/28-dopt-1-right"
+  ],
+  "question": "What 2-digit VIRUS LEVEL number is shown? Answer with exactly the digits.",
+  "options": [
+   "OCR"
+  ],
+  "answer": "04",
+  "pair": null,
+  "transform": "shuffle",
+  "control": true
+ },
+ {
+  "id": "q140",
+  "cat": "control",
+  "images": [
+   "cap:play/f0049"
+  ],
+  "question": "In which horizontal third of the Tetris well is the falling piece? A) left third B) center third C) right third Answer with exactly one letter.",
+  "options": [
+   [
+    "A",
+    "left third"
+   ],
+   [
+    "B",
+    "center third"
+   ],
+   [
+    "C",
+    "right third"
+   ]
+  ],
+  "answer": "C",
+  "pair": null,
+  "transform": "shuffle",
+  "control": true
+ }
+]
