@@ -57,3 +57,14 @@ secondplayer --config config/bench-tetris.toml bench tetris <rom> \
 First Laya run: `game_over`, score **5**, lines 0, 78 decisions in 92s,
 infer p50 983ms / p95 1218ms, 0 failures, 0 decode gaps. The agent survived
 ~12 pieces on soft-drop points without clearing a line — the number to beat.
+
+Historical checkpoint (do not relabel): that run used laya-vision code
+`05ba04399f0e34ff31f7c8adf95d127c7fd009fc` with the mutable
+`thaitea/laya-vision` alias, which on 2026-09-23 resolved to
+`d1fbdc0612fbe3b3d8ec6f54d328b195d35bb338` (cauldron-score-2ep-bidir-full,
+237M, no game training). The Hub history shows no push to that repo between
+2026-09-22 15:19 UTC and 2026-09-24 05:35 UTC, so the score-5 run predates
+the current checkpoint. The committed JSON report for that run is lost
+(only the numbers above survive); current benchmarks pin
+`thaitea/laya-vision-201m@0b6228f7a0762566de1c4539e9aa4eb1c1aef5f4`
+and record resolved revisions in `model_provenance`.
